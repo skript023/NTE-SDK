@@ -16,32 +16,32 @@
 namespace SDK::Params
 {
 
-// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
-struct BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_Portal.BP_Portal_C.SetTargetActor
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Portal_C_SetTargetActor final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 NewTarget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_Portal_C_SetTargetActor;
 
-// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_Portal.BP_Portal_C.SetNewPortalTarget
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Portal_C_SetNewPortalTarget final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 NewPortalTarget;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_Portal_C_SetNewPortalTarget;
+
+// Function BP_Portal.BP_Portal_C.OnTriggerTeleportStarted
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Portal_C_OnTriggerTeleportStarted final
+{
+public:
+	const class AHTPlayerCharacter*               InPlayerCharacter;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Portal_C_OnTriggerTeleportStarted;
 
 // Function BP_Portal.BP_Portal_C.ExecuteUbergraph_BP_Portal
 // 0x01B8 (0x01B8 - 0x0000)
@@ -82,41 +82,41 @@ public:
 };
 DUMPER7_ASSERTS_BP_Portal_C_ExecuteUbergraph_BP_Portal;
 
-// Function BP_Portal.BP_Portal_C.OnTriggerTeleportStarted
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Portal_C_OnTriggerTeleportStarted final
+// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	const class AHTPlayerCharacter*               InPlayerCharacter;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Portal_C_OnTriggerTeleportStarted;
+DUMPER7_ASSERTS_BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
 
-// Function BP_Portal.BP_Portal_C.SetNewPortalTarget
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Portal_C_SetNewPortalTarget final
+// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0128 (0x0128 - 0x0000)
+struct BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	class AActor*                                 NewPortalTarget;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-DUMPER7_ASSERTS_BP_Portal_C_SetNewPortalTarget;
+DUMPER7_ASSERTS_BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
-// Function BP_Portal.BP_Portal_C.SetTargetActor
+// Function BP_Portal.BP_Portal_C.GetTriggerBoxComponent
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Portal_C_SetTargetActor final
+struct BP_Portal_C_GetTriggerBoxComponent final
 {
 public:
-	class AActor*                                 NewTarget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Portal_C_SetTargetActor;
-
-// Function BP_Portal.BP_Portal_C.GetPlaneComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Portal_C_GetPlaneComponent final
-{
-public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Portal_C_GetPlaneComponent;
+DUMPER7_ASSERTS_BP_Portal_C_GetTriggerBoxComponent;
 
 // Function BP_Portal.BP_Portal_C.GetTargetActor
 // 0x0008 (0x0008 - 0x0000)
@@ -127,14 +127,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_Portal_C_GetTargetActor;
 
-// Function BP_Portal.BP_Portal_C.GetTriggerBoxComponent
+// Function BP_Portal.BP_Portal_C.GetPlaneComponent
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Portal_C_GetTriggerBoxComponent final
+struct BP_Portal_C_GetPlaneComponent final
 {
 public:
-	class UBoxComponent*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Portal_C_GetTriggerBoxComponent;
+DUMPER7_ASSERTS_BP_Portal_C_GetPlaneComponent;
 
 }
 

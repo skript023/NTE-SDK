@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Vehicle_020_ModuleTraffic.BP_Vehicle_020_ModuleTraffic_C
 // 0x0008 (0x1538 - 0x1530)
-class ABP_Vehicle_020_ModuleTraffic_C : public ABP_Vehicle_020_Module_C
+class ABP_Vehicle_020_ModuleTraffic_C final : public ABP_Vehicle_020_Module_C
 {
 public:
 	class UBPBubbleComponent_C*                   BPBubbleComponent;                                 // 0x1530(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

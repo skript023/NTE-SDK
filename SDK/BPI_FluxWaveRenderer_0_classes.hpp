@@ -23,7 +23,7 @@ class BPI_FluxWaveRenderer_0::IBPI_FluxWaveRenderer_C final
 public:
 	void CanRenderWave(bool* CanRender);
 	void GetWaveTextureMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances);
-	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
 	void SetWaveTexture();
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 

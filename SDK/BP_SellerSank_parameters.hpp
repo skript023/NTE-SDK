@@ -17,6 +17,62 @@
 namespace SDK::Params
 {
 
+// Function BP_SellerSank.BP_SellerSank_C.StoneMove
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SellerSank_C_StoneMove final
+{
+public:
+	class UStaticMeshComponent*                   MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_StoneMove;
+
+// Function BP_SellerSank.BP_SellerSank_C.SetRelative
+// 0x0128 (0x0128 - 0x0000)
+struct BP_SellerSank_C_SetRelative final
+{
+public:
+	class UStaticMeshComponent*                   MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0020(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_SetRelative;
+
+// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SellerSank_C_OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4;
+
+// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SellerSank_C_OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1;
+
+// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SellerSank_C_OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1;
+
+// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_100433F541EDC95D45F160A572E9EDE0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SellerSank_C_OnLoaded_100433F541EDC95D45F160A572E9EDE0 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_100433F541EDC95D45F160A572E9EDE0;
+
 // Function BP_SellerSank.BP_SellerSank_C.ExecuteUbergraph_BP_SellerSank
 // 0x00F0 (0x00F0 - 0x0000)
 struct BP_SellerSank_C_ExecuteUbergraph_BP_SellerSank final
@@ -54,62 +110,6 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SellerSank_C_ExecuteUbergraph_BP_SellerSank;
-
-// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_100433F541EDC95D45F160A572E9EDE0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SellerSank_C_OnLoaded_100433F541EDC95D45F160A572E9EDE0 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_100433F541EDC95D45F160A572E9EDE0;
-
-// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SellerSank_C_OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1;
-
-// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SellerSank_C_OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1;
-
-// Function BP_SellerSank.BP_SellerSank_C.OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SellerSank_C_OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4;
-
-// Function BP_SellerSank.BP_SellerSank_C.SetRelative
-// 0x0128 (0x0128 - 0x0000)
-struct BP_SellerSank_C_SetRelative final
-{
-public:
-	class UStaticMeshComponent*                   MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0020(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_SetRelative;
-
-// Function BP_SellerSank.BP_SellerSank_C.StoneMove
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SellerSank_C_StoneMove final
-{
-public:
-	class UStaticMeshComponent*                   MeshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SellerSank_C_StoneMove;
 
 }
 

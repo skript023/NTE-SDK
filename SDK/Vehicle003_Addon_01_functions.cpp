@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Vehicle003_Addon_01.Vehicle003_Addon_01_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UVehicle003_Addon_01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vehicle003_Addon_01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Vehicle003_Addon_01.Vehicle003_Addon_01_C.ExecuteUbergraph_Vehicle003_Addon_01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UVehicle003_Addon_01_C::ExecuteUbergraph_Vehicle003_Addon_01(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Vehicle003_Addon_01.Vehicle003_Addon_01_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UVehicle003_Addon_01_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Vehicle003_Addon_01_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

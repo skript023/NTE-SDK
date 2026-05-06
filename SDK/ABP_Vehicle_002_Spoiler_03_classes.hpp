@@ -46,10 +46,10 @@ public:
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0728(0x00C8)()
 
 public:
-	void ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03_AnimGraphNode_TransitionResult_9E0C38D947BD38A267169BB2F3E7D4D2();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03_AnimGraphNode_TransitionResult_64CF60BE4954DC8136396CBD536ACC40();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03_AnimGraphNode_TransitionResult_64CF60BE4954DC8136396CBD536ACC40();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03_AnimGraphNode_TransitionResult_9E0C38D947BD38A267169BB2F3E7D4D2();
+	void ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

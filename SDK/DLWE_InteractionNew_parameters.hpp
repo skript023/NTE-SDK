@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UDS_DLWE_Mode_0_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UDS_DLWE_Mode_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UDS_DLWE_Mode_0_structs.hpp"
 
 
 namespace SDK::Params
@@ -136,7 +136,7 @@ DUMPER7_ASSERTS_DLWE_InteractionNew_C_Distance_Check;
 struct DLWE_InteractionNew_C_DLWE_Mode_Change final
 {
 public:
-	UDS_DLWE_Mode::EUDS_DLWE_Mode                 New_Mode;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UDS_DLWE_Mode_0::EUDS_DLWE_Mode               New_Mode;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_DLWE_InteractionNew_C_DLWE_Mode_Change;
 
@@ -257,7 +257,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_1;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Temp_real_Variable;                                // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UDS_DLWE_Mode_0::EUDS_DLWE_Mode               Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UDS_DLWE_Mode::EUDS_DLWE_Mode                 Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -585,7 +585,7 @@ public:
 	double                                        CallFunc_Vector_Distance2D_ReturnValue;            // 0x0668(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0670(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue_2;       // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UDS_DLWE_Mode_0::EUDS_DLWE_Mode               Temp_byte_Variable;                                // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UDS_DLWE_Mode::EUDS_DLWE_Mode                 Temp_byte_Variable;                                // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_67A[0x6];                                      // 0x067A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_Select_Default;                             // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit_5;            // 0x0688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

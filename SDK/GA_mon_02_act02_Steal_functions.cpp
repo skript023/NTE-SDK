@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function GA_mon_02_act02_Steal.GA_mon_02_act02_Steal_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void UGA_mon_02_act02_Steal_C::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_mon_02_act02_Steal_C", "K2_ActivateAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function GA_mon_02_act02_Steal.GA_mon_02_act02_Steal_C.ExecuteUbergraph_GA_mon_02_act02_Steal
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UGA_mon_02_act02_Steal_C::ExecuteUbergraph_GA_mon_02_act02_Steal(int32 Entr
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GA_mon_02_act02_Steal.GA_mon_02_act02_Steal_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void UGA_mon_02_act02_Steal_C::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_mon_02_act02_Steal_C", "K2_ActivateAbility");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

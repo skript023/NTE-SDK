@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "BS_FluxHeightmapDomain_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "BS_FluxCaptureVisibility_structs.hpp"
+#include "BS_FluxHeightmapDomain_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BS_FluxCaptureVisibility_structs.hpp"
 
 
 namespace SDK

@@ -23,7 +23,7 @@ class BPI_FluxInteractionRenderer_0::IBPI_FluxInteractionRenderer_C final
 public:
 	void CanRenderInteractions(bool* CanRender);
 	void GetCoastlineState(class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C** State);
-	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
 	void SetInteractionsArea(const struct FLinearColor& Area);
 	void SetInteractionsAreaVehicle(const struct FLinearColor& Area);
 	void SetInteractionsTexture(class UTextureRenderTarget2D* Texture);

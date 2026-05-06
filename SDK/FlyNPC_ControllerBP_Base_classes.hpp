@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass FlyNPC_ControllerBP_Base.FlyNPC_ControllerBP_Base_C
 // 0x0000 (0x0860 - 0x0860)
-class AFlyNPC_ControllerBP_Base_C : public ANPC_ControllerBP_Base_C
+class AFlyNPC_ControllerBP_Base_C final : public ANPC_ControllerBP_Base_C
 {
 public:
 	static class UClass* StaticClass()

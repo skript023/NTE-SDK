@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_NPC_Mass_fl_Sub_battle.BP_NPC_Mass_fl_Sub_battle_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NPC_Mass_fl_Sub_battle_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPC_Mass_fl_Sub_battle_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_NPC_Mass_fl_Sub_battle.BP_NPC_Mass_fl_Sub_battle_C.ExecuteUbergraph_BP_NPC_Mass_fl_Sub_battle
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_NPC_Mass_fl_Sub_battle_C::ExecuteUbergraph_BP_NPC_Mass_fl_Sub_battle(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPC_Mass_fl_Sub_battle.BP_NPC_Mass_fl_Sub_battle_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NPC_Mass_fl_Sub_battle_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPC_Mass_fl_Sub_battle_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

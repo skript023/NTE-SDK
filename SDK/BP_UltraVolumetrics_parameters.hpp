@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_Fog_Quality_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_Fog_Quality_structs.hpp"
 
 
 namespace SDK::Params

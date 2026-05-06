@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorIterateSimulation
-// 0x0004 (0x0004 - 0x0000)
-struct BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation final
-{
-public:
-	int32                                         Iterations;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation;
-
 // Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
 struct BPI_FluxTickableEditorCallback_C_OnEditorSelectionChanged final
@@ -32,15 +23,14 @@ public:
 };
 DUMPER7_ASSERTS_BPI_FluxTickableEditorCallback_C_OnEditorSelectionChanged;
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.UpdateModifierMaterials
-// 0x0018 (0x0018 - 0x0000)
-struct BPI_FluxTickableEditorCallback_C_UpdateModifierMaterials final
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorIterateSimulation
+// 0x0004 (0x0004 - 0x0000)
+struct BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation final
 {
 public:
-	TArray<class UMaterialInstanceDynamic*>       Materials;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          UseVelocityMap;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Iterations;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxTickableEditorCallback_C_UpdateModifierMaterials;
+DUMPER7_ASSERTS_BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation;
 
 }
 

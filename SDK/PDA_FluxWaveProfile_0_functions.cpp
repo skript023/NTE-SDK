@@ -17,85 +17,6 @@
 namespace SDK
 {
 
-// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ClearExternalReferences
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ClearExternalReferences()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ClearExternalReferences");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.CopyPropertiesToObject
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Destination                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Done                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::CopyPropertiesToObject(class UObject* Destination, bool* Done)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "CopyPropertiesToObject");
-
-	Params::PDA_FluxWaveProfile_C_CopyPropertiesToObject Parms{};
-
-	Parms.Destination = Destination;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Done != nullptr)
-		*Done = Parms.Done;
-}
-
-
-// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ExecuteUbergraph_PDA_FluxWaveProfile
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ExecuteUbergraph_PDA_FluxWaveProfile(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ExecuteUbergraph_PDA_FluxWaveProfile");
-
-	Params::PDA_FluxWaveProfile_C_ExecuteUbergraph_PDA_FluxWaveProfile Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.GetExternalReferences
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UTexture*>*                Objects                                                (Parm, OutParm)
-
-void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::GetExternalReferences(TArray<class UTexture*>* Objects)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "GetExternalReferences");
-
-	Params::PDA_FluxWaveProfile_C_GetExternalReferences Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Objects != nullptr)
-		*Objects = std::move(Parms.Objects);
-}
-
-
 // Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.SetWaveProfileData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -126,25 +47,82 @@ void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::SetWaveProfileData(class UTe
 }
 
 
-// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ApplyWaveProfileMaterialData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.GetExternalReferences
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UMaterialInstanceDynamic*>&Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<class UTexture*>*                Objects                                                (Parm, OutParm)
 
-void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ApplyWaveProfileMaterialData(TArray<class UMaterialInstanceDynamic*>& Materials) const
+void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::GetExternalReferences(TArray<class UTexture*>* Objects)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ApplyWaveProfileMaterialData");
+		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "GetExternalReferences");
 
-	Params::PDA_FluxWaveProfile_C_ApplyWaveProfileMaterialData Parms{};
-
-	Parms.Materials = std::move(Materials);
+	Params::PDA_FluxWaveProfile_C_GetExternalReferences Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Materials = std::move(Parms.Materials);
+	if (Objects != nullptr)
+		*Objects = std::move(Parms.Objects);
+}
+
+
+// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ExecuteUbergraph_PDA_FluxWaveProfile
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ExecuteUbergraph_PDA_FluxWaveProfile(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ExecuteUbergraph_PDA_FluxWaveProfile");
+
+	Params::PDA_FluxWaveProfile_C_ExecuteUbergraph_PDA_FluxWaveProfile Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.CopyPropertiesToObject
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Destination                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Done                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::CopyPropertiesToObject(class UObject* Destination, bool* Done)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "CopyPropertiesToObject");
+
+	Params::PDA_FluxWaveProfile_C_CopyPropertiesToObject Parms{};
+
+	Parms.Destination = Destination;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Done != nullptr)
+		*Done = Parms.Done;
+}
+
+
+// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ClearExternalReferences
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ClearExternalReferences()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ClearExternalReferences");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -165,6 +143,28 @@ void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ApplyWaveProfileNiagaraData(
 	Parms.NiagaraSystem = NiagaraSystem;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PDA_FluxWaveProfile.PDA_FluxWaveProfile_C.ApplyWaveProfileMaterialData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// TArray<class UMaterialInstanceDynamic*>&Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C::ApplyWaveProfileMaterialData(TArray<class UMaterialInstanceDynamic*>& Materials) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxWaveProfile_C", "ApplyWaveProfileMaterialData");
+
+	Params::PDA_FluxWaveProfile_C_ApplyWaveProfileMaterialData Parms{};
+
+	Parms.Materials = std::move(Materials);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Materials = std::move(Parms.Materials);
 }
 
 }

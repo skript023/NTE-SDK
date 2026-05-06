@@ -21,17 +21,16 @@ namespace SDK
 class BPI_FluxTickableEditorCallback_0::IBPI_FluxTickableEditorCallback_C final
 {
 public:
-	void OnEditorIterateSimulation(int32 Iterations);
-	void OnEditorModifierChanged();
-	void OnEditorPostLoad();
-	void OnEditorRestartSimulation();
-	void OnEditorSelectionChanged(bool Selected);
-	void OnEditorShowSimulation();
-	void OnEditorStopSimulation();
-	void OnEditorUpdateLoop();
-	void ToggleUpdateSimulation();
 	void TogleDebugGround();
-	void UpdateModifierMaterials(const TArray<class UMaterialInstanceDynamic*>& Materials, bool UseVelocityMap);
+	void ToggleUpdateSimulation();
+	void OnEditorUpdateLoop();
+	void OnEditorStopSimulation();
+	void OnEditorShowSimulation();
+	void OnEditorSelectionChanged(bool Selected);
+	void OnEditorRestartSimulation();
+	void OnEditorPostLoad();
+	void OnEditorModifierChanged();
+	void OnEditorIterateSimulation(int32 Iterations);
 
 public:
 	static class UClass* StaticClass()

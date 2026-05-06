@@ -32,17 +32,17 @@ public:
 	TSoftClassPtr<class UClass>                   EnvironmentChangeVolumeOneClass_Seven;             // 0x04E8(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SolareClipse(int32 EntryPoint);
-	void InitVolume();
-	void OnLoaded_035778F240286C47FC8D7C8CE7D92106(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_224FD41B44E2229C71DE0A8A0C650B20(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_78475ABC47D60786FB7497B699176E1F(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_A6DA212449794ED83A8860953E8E760D(TSubclassOf<class UObject> Loaded);
-	void ReceiveBeginPlay();
 	void TestInit();
+	void ReceiveBeginPlay();
+	void OnLoaded_A6DA212449794ED83A8860953E8E760D(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_78475ABC47D60786FB7497B699176E1F(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_224FD41B44E2229C71DE0A8A0C650B20(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_035778F240286C47FC8D7C8CE7D92106(TSubclassOf<class UObject> Loaded);
+	void InitVolume();
+	void ExecuteUbergraph_BP_SolareClipse(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

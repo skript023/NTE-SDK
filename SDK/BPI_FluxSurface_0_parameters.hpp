@@ -16,24 +16,34 @@
 namespace SDK::Params
 {
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SpawnSplashAtLocation
-// 0x0020 (0x0020 - 0x0000)
-struct BPI_FluxSurface_C_SpawnSplashAtLocation final
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceMaterialData
+// 0x0010 (0x0010 - 0x0000)
+struct BPI_FluxSurface_C_ApplySurfaceMaterialData final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Materials;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SpawnSplashAtLocation;
+DUMPER7_ASSERTS_BPI_FluxSurface_C_ApplySurfaceMaterialData;
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetStateHeightWetMap
-// 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxSurface_C_SetStateHeightWetMap final
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceNiagaraData
+// 0x0010 (0x0010 - 0x0000)
+struct BPI_FluxSurface_C_ApplySurfaceNiagaraData final
 {
 public:
-	class UTexture*                               Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      ParticleSystem;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          RequiredGround;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RequiredWave;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SetStateHeightWetMap;
+DUMPER7_ASSERTS_BPI_FluxSurface_C_ApplySurfaceNiagaraData;
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetCoastlineState
+// 0x0008 (0x0008 - 0x0000)
+struct BPI_FluxSurface_C_SetCoastlineState final
+{
+public:
+	class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C* State;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPI_FluxSurface_C_SetCoastlineState;
 
 // Function BPI_FluxSurface.BPI_FluxSurface_C.SetSimulationState
 // 0x0008 (0x0008 - 0x0000)
@@ -44,78 +54,24 @@ public:
 };
 DUMPER7_ASSERTS_BPI_FluxSurface_C_SetSimulationState;
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetSignedDistanceFieldMask
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetStateHeightWetMap
 // 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxSurface_C_SetSignedDistanceFieldMask final
+struct BPI_FluxSurface_C_SetStateHeightWetMap final
 {
 public:
-	class UPDA_FluxSignedDistanceField_C*         SignedDistanceField;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SetSignedDistanceFieldMask;
+DUMPER7_ASSERTS_BPI_FluxSurface_C_SetStateHeightWetMap;
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetGeneratorMode
-// 0x0010 (0x0010 - 0x0000)
-struct BPI_FluxSurface_C_SetGeneratorMode final
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SpawnSplashAtLocation
+// 0x0020 (0x0020 - 0x0000)
+struct BPI_FluxSurface_C_SpawnSplashAtLocation final
 {
 public:
-	class UStaticMesh*                            GeneratorMesh;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Visible;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SetGeneratorMode;
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetColorPreset
-// 0x0010 (0x0010 - 0x0000)
-struct BPI_FluxSurface_C_SetColorPreset final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C* Preset;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SetColorPreset;
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetCoastlineState
-// 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxSurface_C_SetCoastlineState final
-{
-public:
-	class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C* State;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxSurface_C_SetCoastlineState;
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.GetColorPreset
-// 0x0010 (0x0010 - 0x0000)
-struct BPI_FluxSurface_C_GetColorPreset final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C* Preset;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxSurface_C_GetColorPreset;
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceNiagaraData
-// 0x0010 (0x0010 - 0x0000)
-struct BPI_FluxSurface_C_ApplySurfaceNiagaraData final
-{
-public:
-	class UNiagaraComponent*                      ParticleSystem;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          RequiredGround;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RequiredWave;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RequreSDF;                                         // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxSurface_C_ApplySurfaceNiagaraData;
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceMaterialData
-// 0x0018 (0x0018 - 0x0000)
-struct BPI_FluxSurface_C_ApplySurfaceMaterialData final
-{
-public:
-	TArray<class UMaterialInstanceDynamic*>       Materials;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Domains;                                           // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Colors;                                            // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxSurface_C_ApplySurfaceMaterialData;
+DUMPER7_ASSERTS_BPI_FluxSurface_C_SpawnSplashAtLocation;
 
 // Function BPI_FluxSurface.BPI_FluxSurface_C.GetVolumeCollision
 // 0x0008 (0x0008 - 0x0000)

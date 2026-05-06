@@ -26,10 +26,10 @@ public:
 	class FText                                   TrickMsg;                                          // 0x2BF8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet(int32 EntryPoint);
-	void Cus_Trick();
-	void Cus_TimerBuff();
 	void Cus_SpecialBuff();
+	void Cus_TimerBuff();
+	void Cus_Trick();
+	void ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

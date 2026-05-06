@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AIOverlay_AnimLayer_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AIOverlay_AnimLayer_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "HTGame_classes.hpp"
 

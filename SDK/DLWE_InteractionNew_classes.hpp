@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UDS_DLWE_Mode_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UDS_DLWE_Mode_0_structs.hpp"
+#include "UDS_DLWE_Mode_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "HTGame_classes.hpp"
+#include "UDS_DLWE_Mode_0_structs.hpp"
 
 
 namespace SDK
@@ -86,7 +86,7 @@ public:
 	void Deactivated_Component(class UActorComponent* Component);
 	void Disable_Sound_and_Particles();
 	void Distance_Check();
-	void DLWE_Mode_Change(UDS_DLWE_Mode::EUDS_DLWE_Mode New_Mode);
+	void DLWE_Mode_Change(UDS_DLWE_Mode_0::EUDS_DLWE_Mode New_Mode);
 	void Draw_Surface_Interactions();
 	void ExecuteUbergraph_DLWE_InteractionNew(int32 EntryPoint);
 	void General_Surface_Impact();

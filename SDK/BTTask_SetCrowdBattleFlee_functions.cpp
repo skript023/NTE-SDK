@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BTTask_SetCrowdBattleFlee.BTTask_SetCrowdBattleFlee_C.ExecuteUbergraph_BTTask_SetCrowdBattleFlee
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBTTask_SetCrowdBattleFlee_C::ExecuteUbergraph_BTTask_SetCrowdBattleFlee(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_SetCrowdBattleFlee_C", "ExecuteUbergraph_BTTask_SetCrowdBattleFlee");
+
+	Params::BTTask_SetCrowdBattleFlee_C_ExecuteUbergraph_BTTask_SetCrowdBattleFlee Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BTTask_SetCrowdBattleFlee.BTTask_SetCrowdBattleFlee_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -34,26 +54,6 @@ void UBTTask_SetCrowdBattleFlee_C::ReceiveExecuteAI(class AAIController* OwnerCo
 
 	Parms.OwnerController = OwnerController;
 	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BTTask_SetCrowdBattleFlee.BTTask_SetCrowdBattleFlee_C.ExecuteUbergraph_BTTask_SetCrowdBattleFlee
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBTTask_SetCrowdBattleFlee_C::ExecuteUbergraph_BTTask_SetCrowdBattleFlee(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_SetCrowdBattleFlee_C", "ExecuteUbergraph_BTTask_SetCrowdBattleFlee");
-
-	Params::BTTask_SetCrowdBattleFlee_C_ExecuteUbergraph_BTTask_SetCrowdBattleFlee Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.RenderScenePainter
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C::RenderScenePainter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "RenderScenePainter");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.OnRepaintBrushes
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C::OnRepaintBrushes()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "OnRepaintBrushes");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.ApplyMaterialParameters
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -62,6 +34,34 @@ void BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C::ApplyMaterialParameters(co
 	Parms.Materials = std::move(Materials);
 
 	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.OnRepaintBrushes
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C::OnRepaintBrushes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "OnRepaintBrushes");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.RenderScenePainter
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C::RenderScenePainter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "RenderScenePainter");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 }

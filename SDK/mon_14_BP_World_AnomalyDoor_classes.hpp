@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_mon_14_BP_World_AnomalyDoor_C;      // 0x2B20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ReceiveBeginPlay();
-	void OnBeginBattle();
 	void ExecuteUbergraph_mon_14_BP_World_AnomalyDoor(int32 EntryPoint);
+	void OnBeginBattle();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

@@ -53,22 +53,22 @@ public:
 	bool                                          IsInside_;                                         // 0x0C58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BPOnMainRoleLoadFinished(class AHTPlayerState* PlayerState);
-	void ChangeCollision();
-	void Completed_4F84CBC948E8E59A59041AA68A08EA76(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
-	void Completed_851A67A34D2962400F547A91DA4D73CD(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
-	void Completed_E284F72344C4C51B2AA45BAA838840D0(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
-	void EndDestroy();
-	void ExecuteUbergraph_BP_TriggerSequencePlayer(int32 EntryPoint);
-	void FinishStopPlaying();
-	void FromFrameTo();
-	void JumpTo(double ToSubFrame, int32 ToFrameNumber, double Time);
-	void JumpToEnd();
-	void PlaySequence();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ResetSequencePlayer();
 	void StopSequence(bool ToStart_);
+	void ResetSequencePlayer();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void PlaySequence();
+	void JumpToEnd();
+	void JumpTo(double ToSubFrame, int32 ToFrameNumber, double Time);
+	void FromFrameTo();
+	void FinishStopPlaying();
+	void ExecuteUbergraph_BP_TriggerSequencePlayer(int32 EntryPoint);
+	void EndDestroy();
+	void Completed_E284F72344C4C51B2AA45BAA838840D0(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
+	void Completed_851A67A34D2962400F547A91DA4D73CD(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
+	void Completed_4F84CBC948E8E59A59041AA68A08EA76(class ALevelSequenceActor* LevelSequenceActor, class ULevelSequencePlayer* LevelSequencePlayer);
+	void ChangeCollision();
+	void BPOnMainRoleLoadFinished(class AHTPlayerState* PlayerState);
+	void BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()

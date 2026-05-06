@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.Cus_SpecialBuff
+// (BlueprintCallable, BlueprintEvent)
 
-void Amon_21_BP_Vision_Boxing_BackStreet_C::ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet(int32 EntryPoint)
+void Amon_21_BP_Vision_Boxing_BackStreet_C::Cus_SpecialBuff()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet");
-
-	Params::mon_21_BP_Vision_Boxing_BackStreet_C_ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.Cus_Trick
-// (BlueprintEvent)
-
-void Amon_21_BP_Vision_Boxing_BackStreet_C::Cus_Trick()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "Cus_Trick");
+		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "Cus_SpecialBuff");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,17 +45,37 @@ void Amon_21_BP_Vision_Boxing_BackStreet_C::Cus_TimerBuff()
 }
 
 
-// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.Cus_SpecialBuff
-// (BlueprintCallable, BlueprintEvent)
+// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.Cus_Trick
+// (BlueprintEvent)
 
-void Amon_21_BP_Vision_Boxing_BackStreet_C::Cus_SpecialBuff()
+void Amon_21_BP_Vision_Boxing_BackStreet_C::Cus_Trick()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "Cus_SpecialBuff");
+		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "Cus_Trick");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mon_21_BP_Vision_Boxing_BackStreet.mon_21_BP_Vision_Boxing_BackStreet_C.ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Amon_21_BP_Vision_Boxing_BackStreet_C::ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mon_21_BP_Vision_Boxing_BackStreet_C", "ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet");
+
+	Params::mon_21_BP_Vision_Boxing_BackStreet_C_ExecuteUbergraph_mon_21_BP_Vision_Boxing_BackStreet Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

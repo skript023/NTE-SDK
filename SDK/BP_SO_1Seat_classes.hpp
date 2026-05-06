@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SO_1Seat.BP_SO_1Seat_C
 // 0x0008 (0x0388 - 0x0380)
-class ABP_SO_1Seat_C final : public AHTFairySeatSO
+class ABP_SO_1Seat_C : public AHTFairySeatSO
 {
 public:
 	class UStaticMeshComponent*                   Cube;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

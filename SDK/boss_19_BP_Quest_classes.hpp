@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "HTGame_structs.hpp"
 #include "boss_19_BP_classes.hpp"
+#include "HTGame_structs.hpp"
 
 
 namespace SDK

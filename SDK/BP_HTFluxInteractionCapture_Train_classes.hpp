@@ -51,7 +51,7 @@ public:
 	void ReceiveBeginPlay();
 	void PreviewDebugArea();
 	void InitializeArea();
-	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
 	void GetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C** State);
 	void ExecuteUbergraph_BP_HTFluxInteractionCapture_Train(int32 EntryPoint);
 	void BndEvt__WaterSurface_BP_Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "MonsterCharacterBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MonsterCharacterBase_classes.hpp"
 
 
 namespace SDK
@@ -73,40 +73,40 @@ public:
 	bool                                          Isbodyplay;                                        // 0x2B1A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void 时间轴__UpdateFunc();
-	void 时间轴__FinishedFunc();
-	void 时间轴_6__UpdateFunc();
-	void 时间轴_6__FinishedFunc();
-	void 时间轴_5__UpdateFunc();
-	void 时间轴_5__FinishedFunc();
-	void 时间轴_4__UpdateFunc();
-	void 时间轴_4__FinishedFunc();
-	void 时间轴_3__UpdateFunc();
-	void 时间轴_3__FinishedFunc();
-	void 时间轴_0__UpdateFunc();
-	void 时间轴_0__FinishedFunc();
-	void tonghide();
-	void Timeline_1__UpdateFunc();
-	void Timeline_1__FinishedFunc();
-	void Timeline_0__UpdateFunc();
-	void Timeline_0__FinishedFunc();
-	void swordend();
-	void SwordChange();
-	void swordbegin();
-	void shieldend();
-	void shieldbegin();
-	void ReceiveBeginPlay();
-	void PlayBodyHide();
-	void PlayBodyDisplay();
-	void OnBeginBattle();
-	void IntoBattle();
-	void ExecuteUbergraph_mon_14_BP(int32 EntryPoint);
-	void EndBattle();
-	void end_plus();
-	void BPOnLeaveBattleEnd();
-	void BPOnAICharacterDead();
-	void BP_OnArmorBroken();
 	void One1();
+	void BP_OnArmorBroken();
+	void BPOnAICharacterDead();
+	void BPOnLeaveBattleEnd();
+	void end_plus();
+	void EndBattle();
+	void ExecuteUbergraph_mon_14_BP(int32 EntryPoint);
+	void IntoBattle();
+	void OnBeginBattle();
+	void PlayBodyDisplay();
+	void PlayBodyHide();
+	void ReceiveBeginPlay();
+	void shieldbegin();
+	void shieldend();
+	void swordbegin();
+	void SwordChange();
+	void swordend();
+	void Timeline_0__FinishedFunc();
+	void Timeline_0__UpdateFunc();
+	void Timeline_1__FinishedFunc();
+	void Timeline_1__UpdateFunc();
+	void tonghide();
+	void 时间轴_0__FinishedFunc();
+	void 时间轴_0__UpdateFunc();
+	void 时间轴_3__FinishedFunc();
+	void 时间轴_3__UpdateFunc();
+	void 时间轴_4__FinishedFunc();
+	void 时间轴_4__UpdateFunc();
+	void 时间轴_5__FinishedFunc();
+	void 时间轴_5__UpdateFunc();
+	void 时间轴_6__FinishedFunc();
+	void 时间轴_6__UpdateFunc();
+	void 时间轴__FinishedFunc();
+	void 时间轴__UpdateFunc();
 
 public:
 	static class UClass* StaticClass()

@@ -30,9 +30,9 @@ public:
 	bool                                          bFadeOut;                                          // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PrepareForPooling();
-	void ExecuteUbergraph_BP_TrafficMonster_01_Hight(int32 EntryPoint);
 	void BndEvt__BP_TrafficMonster_01_Hight_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void ExecuteUbergraph_BP_TrafficMonster_01_Hight(int32 EntryPoint);
+	void PrepareForPooling();
 
 public:
 	static class UClass* StaticClass()

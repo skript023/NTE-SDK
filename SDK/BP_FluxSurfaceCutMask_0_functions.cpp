@@ -30,5 +30,39 @@ void BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function BP_FluxSurfaceCutMask.BP_FluxSurfaceCutMask_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FluxSurfaceCutMask_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FluxSurfaceCutMask.BP_FluxSurfaceCutMask_C.ExecuteUbergraph_BP_FluxSurfaceCutMask
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C::ExecuteUbergraph_BP_FluxSurfaceCutMask(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FluxSurfaceCutMask_C", "ExecuteUbergraph_BP_FluxSurfaceCutMask");
+
+	Params::BP_FluxSurfaceCutMask_C_ExecuteUbergraph_BP_FluxSurfaceCutMask Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "Enum_Fog_Presets_structs.hpp"
+#include "Enum_Fog_Quality_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Enum_Fog_Quality_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Struct_FogQualityVars_structs.hpp"
-#include "Enum_Fog_Presets_structs.hpp"
 
 
 namespace SDK

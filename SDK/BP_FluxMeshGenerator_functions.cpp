@@ -21,14 +21,14 @@ namespace SDK
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UProceduralMeshComponent*         InitMesh                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*InitState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C*InitState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   LOD                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*               Material                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // uint8                                   Padding                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Vetticles                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Polygons                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FluxMeshGenerator_C::GenerateMesh(class UProceduralMeshComponent* InitMesh, class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* InitState, int32 LOD, class UMaterialInterface* Material, uint8 Padding, int32* Vetticles, int32* Polygons)
+void UBP_FluxMeshGenerator_C::GenerateMesh(class UProceduralMeshComponent* InitMesh, class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* InitState, int32 LOD, class UMaterialInterface* Material, uint8 Padding, int32* Vetticles, int32* Polygons)
 {
 	static class UFunction* Func = nullptr;
 
@@ -92,11 +92,11 @@ void UBP_FluxMeshGenerator_C::GetTriangle(TArray<int32>& Array, int32 Index_0, i
 // Function BP_FluxMeshGenerator.BP_FluxMeshGenerator_C.InitializeBuffers
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // uint8                                   EdgePadding                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  FoamScale                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FluxMeshGenerator_C::InitializeBuffers(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State, uint8 EdgePadding, double FoamScale)
+void UBP_FluxMeshGenerator_C::InitializeBuffers(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State, uint8 EdgePadding, double FoamScale)
 {
 	static class UFunction* Func = nullptr;
 

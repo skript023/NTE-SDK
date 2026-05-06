@@ -13,14 +13,14 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "BS_FluxRectBlend_structs.hpp"
+#include "BS_FluxRectBlend_0_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass PDA_FluxSimulationState.PDA_FluxSimulationState_C
-// 0x00A8 (0x00D8 - 0x0030)
+// 0x0098 (0x00C8 - 0x0030)
 class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C final : public UPrimaryDataAsset
 {
 public:
@@ -40,38 +40,30 @@ public:
 	int32                                         LevelOfDetail;                                     // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Compression;                                       // 0x00AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct BS_FluxRectBlend::FBS_FluxRectBlend    AreaBlend;                                         // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct BS_FluxRectBlend_0::FBS_FluxRectBlend  AreaBlend;                                         // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CaptureOffset;                                     // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        IterationDeltaTime;                                // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         IterationsPerSecond;                               // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetStateConfing(bool StaticFrame, double VelocityNormalization, double HeightNormalization, int32 LevelOfDetail_0, bool Compression_0);
-	void SetSimulationWorld(const struct FVector& Location, const struct FVector& Size, int32 Frame, const struct FIntPoint& Resolution_0, const struct BS_FluxRectBlend::FBS_FluxRectBlend& Blend, double DepthOffset, double DeltaTime, int32 IterationsPerSecond_0);
-	void SetSimulationTextures(class UTexture* Surface, class UTexture* Ground, class UTexture* Velocity);
-	void IsDefinied(bool* Valid);
-	void GetWorldTransform(struct FTransform* NewParam);
-	void GetPathNames(TArray<class FString>* Output_Get);
-	void GetLODScale(int32* Integer);
-	void GetExternalReferences(TArray<class UTexture*>* Objects);
-	void GetExternalFiles(TArray<class UTexture*>* List);
-	void ExecuteUbergraph_PDA_FluxSimulationState(int32 EntryPoint);
-	void CreateDataAsset();
-	void CopyPropertiesToObject(class UObject* Destination, bool* Done);
-	void ClearExternalReferences();
 	void ApplyNiagaraData(class UNiagaraComponent* NiagaraSystem, bool UseGround, bool UseSurface);
+	void ClearExternalReferences();
+	void CopyPropertiesToObject(class UObject* Destination, bool* Done);
+	void ExecuteUbergraph_PDA_FluxSimulationState(int32 EntryPoint);
+	void GetExternalFiles(TArray<class UTexture*>* List);
+	void GetExternalReferences(TArray<class UTexture*>* Objects);
+	void GetLODScale(int32* Integer);
+	void GetPathNames(TArray<class FString>* Output_Get);
+	void GetVolumeTransform(const struct FVector& ExtraSize, const struct FVector& Scale, double ZOffsetScale, struct FTransform* NewParam);
+	void SetSimulationTextures(class UTexture* Surface, class UTexture* Ground, class UTexture* Velocity);
+	void SetSimulationWorld(const struct FVector& Location, const struct FVector& Size, int32 Frame, const struct FIntPoint& Resolution_0, const struct BS_FluxRectBlend_0::FBS_FluxRectBlend& Blend, double DepthOffset);
+	void SetStateConfing(bool StaticFrame, double VelocityNormalization, double HeightNormalization, int32 LevelOfDetail_0, bool Compression_0);
 
-	void GetWorldToTextureUV(struct FLinearColor* WorldToTextureUV) const;
-	void GetWorldPixelSize(double* PixelSize) const;
-	void GetVelocityScale(double* Scale) const;
-	void GetTextureSize(struct FIntPoint* Resolution_0) const;
-	void GetResolutionInfo(struct FLinearColor* PixelSizeResolution) const;
-	void GetNormalizeVector(struct FVector* LinearColor) const;
-	void GetEncodeVector(struct FLinearColor* LinearColor) const;
-	void GetDecodeVector(struct FVector* LinearColor) const;
-	struct FVector4 GetAreaBlendBorders() const;
 	void ApplyMaterialData(TArray<class UMaterialInstanceDynamic*>& MaterialInstances) const;
-	void ApplyLandscapeData(class ALandscape* Landscape) const;
+	struct FVector4 GetAreaBlendBorders() const;
+	void GetDecodeVector(struct FVector* LinearColor) const;
+	void GetEncodeVector(struct FLinearColor* LinearColor) const;
+	void GetPixelSize(struct FLinearColor* WorldToSimulationUV) const;
+	void GetTextureSize(struct FIntPoint* Resolution_0) const;
+	void GetWorldToTextureUV(struct FLinearColor* WorldToTextureUV) const;
 
 public:
 	static class UClass* StaticClass()

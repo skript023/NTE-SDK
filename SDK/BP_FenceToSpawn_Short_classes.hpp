@@ -41,12 +41,12 @@ public:
 	double                                        LocRandom;                                         // 0x0D30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Cus_FenceDisappear();
-	void Cus_FenceShake();
-	void ExecuteUbergraph_BP_FenceToSpawn_Short(int32 EntryPoint);
-	void OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0(class UObject* Loaded);
-	void TrickRotate__FinishedFunc();
 	void TrickRotate__UpdateFunc();
+	void TrickRotate__FinishedFunc();
+	void OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0(class UObject* Loaded);
+	void ExecuteUbergraph_BP_FenceToSpawn_Short(int32 EntryPoint);
+	void Cus_FenceShake();
+	void Cus_FenceDisappear();
 
 public:
 	static class UClass* StaticClass()

@@ -17,39 +17,247 @@
 namespace SDK
 {
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ApplyNiagaraData
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetStateConfing
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UNiagaraComponent*                NiagaraSystem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    UseGround                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    UseSurface                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    StaticFrame                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  VelocityNormalization                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  HeightNormalization                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LevelOfDetail_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Compression_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ApplyNiagaraData(class UNiagaraComponent* NiagaraSystem, bool UseGround, bool UseSurface)
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetStateConfing(bool StaticFrame, double VelocityNormalization, double HeightNormalization, int32 LevelOfDetail_0, bool Compression_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ApplyNiagaraData");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetStateConfing");
 
-	Params::PDA_FluxSimulationState_C_ApplyNiagaraData Parms{};
+	Params::PDA_FluxSimulationState_C_SetStateConfing Parms{};
 
-	Parms.NiagaraSystem = NiagaraSystem;
-	Parms.UseGround = UseGround;
-	Parms.UseSurface = UseSurface;
+	Parms.StaticFrame = StaticFrame;
+	Parms.VelocityNormalization = VelocityNormalization;
+	Parms.HeightNormalization = HeightNormalization;
+	Parms.LevelOfDetail_0 = LevelOfDetail_0;
+	Parms.Compression_0 = Compression_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ClearExternalReferences
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetSimulationWorld
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Size                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Frame                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FIntPoint&                 Resolution_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct BS_FluxRectBlend::FBS_FluxRectBlend&Blend                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DepthOffset                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   IterationsPerSecond_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ClearExternalReferences()
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetSimulationWorld(const struct FVector& Location, const struct FVector& Size, int32 Frame, const struct FIntPoint& Resolution_0, const struct BS_FluxRectBlend::FBS_FluxRectBlend& Blend, double DepthOffset, double DeltaTime, int32 IterationsPerSecond_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ClearExternalReferences");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetSimulationWorld");
+
+	Params::PDA_FluxSimulationState_C_SetSimulationWorld Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Size = std::move(Size);
+	Parms.Frame = Frame;
+	Parms.Resolution_0 = std::move(Resolution_0);
+	Parms.Blend = std::move(Blend);
+	Parms.DepthOffset = DepthOffset;
+	Parms.DeltaTime = DeltaTime;
+	Parms.IterationsPerSecond_0 = IterationsPerSecond_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetSimulationTextures
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture*                         Surface                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                         Ground                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                         Velocity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetSimulationTextures(class UTexture* Surface, class UTexture* Ground, class UTexture* Velocity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetSimulationTextures");
+
+	Params::PDA_FluxSimulationState_C_SetSimulationTextures Parms{};
+
+	Parms.Surface = Surface;
+	Parms.Ground = Ground;
+	Parms.Velocity = Velocity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.IsDefinied
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::IsDefinied(bool* Valid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "IsDefinied");
+
+	Params::PDA_FluxSimulationState_C_IsDefinied Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetWorldTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      NewParam                                               (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetWorldTransform(struct FTransform* NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetWorldTransform");
+
+	Params::PDA_FluxSimulationState_C_GetWorldTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = std::move(Parms.NewParam);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetPathNames
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class FString>*                  Output_Get                                             (Parm, OutParm)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetPathNames(TArray<class FString>* Output_Get)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetPathNames");
+
+	Params::PDA_FluxSimulationState_C_GetPathNames Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output_Get != nullptr)
+		*Output_Get = std::move(Parms.Output_Get);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetLODScale
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  Integer                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetLODScale(int32* Integer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetLODScale");
+
+	Params::PDA_FluxSimulationState_C_GetLODScale Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Integer != nullptr)
+		*Integer = Parms.Integer;
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetExternalReferences
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UTexture*>*                Objects                                                (Parm, OutParm)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetExternalReferences(TArray<class UTexture*>* Objects)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetExternalReferences");
+
+	Params::PDA_FluxSimulationState_C_GetExternalReferences Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Objects != nullptr)
+		*Objects = std::move(Parms.Objects);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetExternalFiles
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UTexture*>*                List                                                   (Parm, OutParm)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetExternalFiles(TArray<class UTexture*>* List)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetExternalFiles");
+
+	Params::PDA_FluxSimulationState_C_GetExternalFiles Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (List != nullptr)
+		*List = std::move(Parms.List);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ExecuteUbergraph_PDA_FluxSimulationState
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ExecuteUbergraph_PDA_FluxSimulationState(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ExecuteUbergraph_PDA_FluxSimulationState");
+
+	Params::PDA_FluxSimulationState_C_ExecuteUbergraph_PDA_FluxSimulationState Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.CreateDataAsset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::CreateDataAsset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "CreateDataAsset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,275 +287,162 @@ void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::CopyPropertiesToObject
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ExecuteUbergraph_PDA_FluxSimulationState
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ClearExternalReferences
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ExecuteUbergraph_PDA_FluxSimulationState(int32 EntryPoint)
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ClearExternalReferences()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ExecuteUbergraph_PDA_FluxSimulationState");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ClearExternalReferences");
 
-	Params::PDA_FluxSimulationState_C_ExecuteUbergraph_PDA_FluxSimulationState Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetExternalFiles
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UTexture*>*                List                                                   (Parm, OutParm)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetExternalFiles(TArray<class UTexture*>* List)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetExternalFiles");
-
-	Params::PDA_FluxSimulationState_C_GetExternalFiles Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (List != nullptr)
-		*List = std::move(Parms.List);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetExternalReferences
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UTexture*>*                Objects                                                (Parm, OutParm)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetExternalReferences(TArray<class UTexture*>* Objects)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetExternalReferences");
-
-	Params::PDA_FluxSimulationState_C_GetExternalReferences Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Objects != nullptr)
-		*Objects = std::move(Parms.Objects);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetLODScale
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  Integer                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetLODScale(int32* Integer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetLODScale");
-
-	Params::PDA_FluxSimulationState_C_GetLODScale Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Integer != nullptr)
-		*Integer = Parms.Integer;
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetPathNames
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class FString>*                  Output_Get                                             (Parm, OutParm)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetPathNames(TArray<class FString>* Output_Get)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetPathNames");
-
-	Params::PDA_FluxSimulationState_C_GetPathNames Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output_Get != nullptr)
-		*Output_Get = std::move(Parms.Output_Get);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetVolumeTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FVector&                   ExtraSize                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  ZOffsetScale                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform*                      NewParam                                               (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetVolumeTransform(const struct FVector& ExtraSize, const struct FVector& Scale, double ZOffsetScale, struct FTransform* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetVolumeTransform");
-
-	Params::PDA_FluxSimulationState_C_GetVolumeTransform Parms{};
-
-	Parms.ExtraSize = std::move(ExtraSize);
-	Parms.Scale = std::move(Scale);
-	Parms.ZOffsetScale = ZOffsetScale;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = std::move(Parms.NewParam);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetSimulationTextures
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ApplyNiagaraData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture*                         Surface                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UTexture*                         Ground                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UTexture*                         Velocity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraComponent*                NiagaraSystem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    UseGround                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    UseSurface                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetSimulationTextures(class UTexture* Surface, class UTexture* Ground, class UTexture* Velocity)
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ApplyNiagaraData(class UNiagaraComponent* NiagaraSystem, bool UseGround, bool UseSurface)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetSimulationTextures");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ApplyNiagaraData");
 
-	Params::PDA_FluxSimulationState_C_SetSimulationTextures Parms{};
+	Params::PDA_FluxSimulationState_C_ApplyNiagaraData Parms{};
 
-	Parms.Surface = Surface;
-	Parms.Ground = Ground;
-	Parms.Velocity = Velocity;
+	Parms.NiagaraSystem = NiagaraSystem;
+	Parms.UseGround = UseGround;
+	Parms.UseSurface = UseSurface;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetSimulationWorld
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Size                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Frame                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FIntPoint&                 Resolution_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct BS_FluxRectBlend_0::FBS_FluxRectBlend&Blend                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  DepthOffset                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetSimulationWorld(const struct FVector& Location, const struct FVector& Size, int32 Frame, const struct FIntPoint& Resolution_0, const struct BS_FluxRectBlend_0::FBS_FluxRectBlend& Blend, double DepthOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetSimulationWorld");
-
-	Params::PDA_FluxSimulationState_C_SetSimulationWorld Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Size = std::move(Size);
-	Parms.Frame = Frame;
-	Parms.Resolution_0 = std::move(Resolution_0);
-	Parms.Blend = std::move(Blend);
-	Parms.DepthOffset = DepthOffset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.SetStateConfing
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    StaticFrame                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  VelocityNormalization                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  HeightNormalization                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LevelOfDetail_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Compression_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::SetStateConfing(bool StaticFrame, double VelocityNormalization, double HeightNormalization, int32 LevelOfDetail_0, bool Compression_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "SetStateConfing");
-
-	Params::PDA_FluxSimulationState_C_SetStateConfing Parms{};
-
-	Parms.StaticFrame = StaticFrame;
-	Parms.VelocityNormalization = VelocityNormalization;
-	Parms.HeightNormalization = HeightNormalization;
-	Parms.LevelOfDetail_0 = LevelOfDetail_0;
-	Parms.Compression_0 = Compression_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ApplyMaterialData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// TArray<class UMaterialInstanceDynamic*>&MaterialInstances                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ApplyMaterialData(TArray<class UMaterialInstanceDynamic*>& MaterialInstances) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ApplyMaterialData");
-
-	Params::PDA_FluxSimulationState_C_ApplyMaterialData Parms{};
-
-	Parms.MaterialInstances = std::move(MaterialInstances);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	MaterialInstances = std::move(Parms.MaterialInstances);
-}
-
-
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetAreaBlendBorders
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetWorldToTextureUV
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector4                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    WorldToTextureUV                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FVector4 PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetAreaBlendBorders() const
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetWorldToTextureUV(struct FLinearColor* WorldToTextureUV) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetAreaBlendBorders");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetWorldToTextureUV");
 
-	Params::PDA_FluxSimulationState_C_GetAreaBlendBorders Parms{};
+	Params::PDA_FluxSimulationState_C_GetWorldToTextureUV Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (WorldToTextureUV != nullptr)
+		*WorldToTextureUV = std::move(Parms.WorldToTextureUV);
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetDecodeVector
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetWorldPixelSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// double*                                 PixelSize                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetWorldPixelSize(double* PixelSize) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetWorldPixelSize");
+
+	Params::PDA_FluxSimulationState_C_GetWorldPixelSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PixelSize != nullptr)
+		*PixelSize = Parms.PixelSize;
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetVelocityScale
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// double*                                 Scale                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetVelocityScale(double* Scale) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetVelocityScale");
+
+	Params::PDA_FluxSimulationState_C_GetVelocityScale Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Scale != nullptr)
+		*Scale = Parms.Scale;
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetTextureSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FIntPoint*                       Resolution_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetTextureSize(struct FIntPoint* Resolution_0) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetTextureSize");
+
+	Params::PDA_FluxSimulationState_C_GetTextureSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Resolution_0 != nullptr)
+		*Resolution_0 = std::move(Parms.Resolution_0);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetResolutionInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FLinearColor*                    PixelSizeResolution                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetResolutionInfo(struct FLinearColor* PixelSizeResolution) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetResolutionInfo");
+
+	Params::PDA_FluxSimulationState_C_GetResolutionInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PixelSizeResolution != nullptr)
+		*PixelSizeResolution = std::move(Parms.PixelSizeResolution);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetNormalizeVector
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FVector*                         LinearColor                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetDecodeVector(struct FVector* LinearColor) const
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetNormalizeVector(struct FVector* LinearColor) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetDecodeVector");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetNormalizeVector");
 
-	Params::PDA_FluxSimulationState_C_GetDecodeVector Parms{};
+	Params::PDA_FluxSimulationState_C_GetNormalizeVector Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -377,66 +472,86 @@ void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetEncodeVector(struct
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetPixelSize
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetDecodeVector
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FLinearColor*                    WorldToSimulationUV                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         LinearColor                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetPixelSize(struct FLinearColor* WorldToSimulationUV) const
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetDecodeVector(struct FVector* LinearColor) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetPixelSize");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetDecodeVector");
 
-	Params::PDA_FluxSimulationState_C_GetPixelSize Parms{};
+	Params::PDA_FluxSimulationState_C_GetDecodeVector Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (WorldToSimulationUV != nullptr)
-		*WorldToSimulationUV = std::move(Parms.WorldToSimulationUV);
+	if (LinearColor != nullptr)
+		*LinearColor = std::move(Parms.LinearColor);
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetTextureSize
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetAreaBlendBorders
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FIntPoint*                       Resolution_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector4                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetTextureSize(struct FIntPoint* Resolution_0) const
+struct FVector4 PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetAreaBlendBorders() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetTextureSize");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetAreaBlendBorders");
 
-	Params::PDA_FluxSimulationState_C_GetTextureSize Parms{};
+	Params::PDA_FluxSimulationState_C_GetAreaBlendBorders Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Resolution_0 != nullptr)
-		*Resolution_0 = std::move(Parms.Resolution_0);
+	return Parms.ReturnValue;
 }
 
 
-// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.GetWorldToTextureUV
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ApplyMaterialData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FLinearColor*                    WorldToTextureUV                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInstanceDynamic*>&MaterialInstances                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::GetWorldToTextureUV(struct FLinearColor* WorldToTextureUV) const
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ApplyMaterialData(TArray<class UMaterialInstanceDynamic*>& MaterialInstances) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PDA_FluxSimulationState_C", "GetWorldToTextureUV");
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ApplyMaterialData");
 
-	Params::PDA_FluxSimulationState_C_GetWorldToTextureUV Parms{};
+	Params::PDA_FluxSimulationState_C_ApplyMaterialData Parms{};
+
+	Parms.MaterialInstances = std::move(MaterialInstances);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (WorldToTextureUV != nullptr)
-		*WorldToTextureUV = std::move(Parms.WorldToTextureUV);
+	MaterialInstances = std::move(Parms.MaterialInstances);
+}
+
+
+// Function PDA_FluxSimulationState.PDA_FluxSimulationState_C.ApplyLandscapeData
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class ALandscape*                       Landscape                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void PDA_FluxSimulationState::UPDA_FluxSimulationState_C::ApplyLandscapeData(class ALandscape* Landscape) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PDA_FluxSimulationState_C", "ApplyLandscapeData");
+
+	Params::PDA_FluxSimulationState_C_ApplyLandscapeData Parms{};
+
+	Parms.Landscape = Landscape;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "EN_TextureSize_structs.hpp"
 #include "Engine_structs.hpp"
 #include "HTGame_classes.hpp"
+#include "EN_TextureSize_structs.hpp"
 
 
 namespace SDK

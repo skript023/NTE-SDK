@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.BP_PlayAnimation
-// (Event, Protected, BlueprintEvent)
+// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.ExecuteUbergraph_MiniMapIconAnimation_Show
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMiniMapIconAnimation_Show_C::BP_PlayAnimation()
+void UMiniMapIconAnimation_Show_C::ExecuteUbergraph_MiniMapIconAnimation_Show(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MiniMapIconAnimation_Show_C", "BP_PlayAnimation");
+		Func = Class->GetFunction("MiniMapIconAnimation_Show_C", "ExecuteUbergraph_MiniMapIconAnimation_Show");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::MiniMapIconAnimation_Show_C_ExecuteUbergraph_MiniMapIconAnimation_Show Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UMiniMapIconAnimation_Show_C::BP_UpdateAnimation(float Percentage)
 }
 
 
-// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.ExecuteUbergraph_MiniMapIconAnimation_Show
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.BP_PlayAnimation
+// (Event, Protected, BlueprintEvent)
 
-void UMiniMapIconAnimation_Show_C::ExecuteUbergraph_MiniMapIconAnimation_Show(int32 EntryPoint)
+void UMiniMapIconAnimation_Show_C::BP_PlayAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MiniMapIconAnimation_Show_C", "ExecuteUbergraph_MiniMapIconAnimation_Show");
+		Func = Class->GetFunction("MiniMapIconAnimation_Show_C", "BP_PlayAnimation");
 
-	Params::MiniMapIconAnimation_Show_C_ExecuteUbergraph_MiniMapIconAnimation_Show Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

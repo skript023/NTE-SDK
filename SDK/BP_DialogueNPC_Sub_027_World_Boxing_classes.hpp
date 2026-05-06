@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_DialogueNPC_Sub_027_World_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_DialogueNPC_Sub_027_World_classes.hpp"
 #include "HTGame_structs.hpp"
 
 

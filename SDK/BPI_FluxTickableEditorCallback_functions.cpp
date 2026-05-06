@@ -17,71 +17,63 @@
 namespace SDK
 {
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.TogleDebugGround
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorIterateSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Iterations                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::TogleDebugGround()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorIterateSimulation(int32 Iterations)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "TogleDebugGround");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorIterateSimulation");
+
+	Params::BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation Parms{};
+
+	Parms.Iterations = Iterations;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorModifierChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorModifierChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorModifierChanged");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.ToggleUpdateSimulation
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorPostLoad
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::ToggleUpdateSimulation()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorPostLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "ToggleUpdateSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorPostLoad");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorUpdateLoop
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorRestartSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorUpdateLoop()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorRestartSimulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorUpdateLoop");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorStopSimulation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorStopSimulation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorStopSimulation");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorShowSimulation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorShowSimulation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorShowSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorRestartSimulation");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
@@ -107,63 +99,93 @@ void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditor
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorRestartSimulation
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorShowSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorRestartSimulation()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorShowSimulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorRestartSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorShowSimulation");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorPostLoad
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorStopSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorPostLoad()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorStopSimulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorPostLoad");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorStopSimulation");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorModifierChanged
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorUpdateLoop
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorModifierChanged()
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorUpdateLoop()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorModifierChanged");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorUpdateLoop");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.OnEditorIterateSimulation
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.ToggleUpdateSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::ToggleUpdateSimulation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "ToggleUpdateSimulation");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.TogleDebugGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::TogleDebugGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "TogleDebugGround");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxTickableEditorCallback.BPI_FluxTickableEditorCallback_C.UpdateModifierMaterials
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Iterations                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<class UMaterialInstanceDynamic*>&Materials                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    UseVelocityMap                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::OnEditorIterateSimulation(int32 Iterations)
+void BPI_FluxTickableEditorCallback::IBPI_FluxTickableEditorCallback_C::UpdateModifierMaterials(const TArray<class UMaterialInstanceDynamic*>& Materials, bool UseVelocityMap)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "OnEditorIterateSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorCallback_C", "UpdateModifierMaterials");
 
-	Params::BPI_FluxTickableEditorCallback_C_OnEditorIterateSimulation Parms{};
+	Params::BPI_FluxTickableEditorCallback_C_UpdateModifierMaterials Parms{};
 
-	Parms.Iterations = Iterations;
+	Parms.Materials = std::move(Materials);
+	Parms.UseVelocityMap = UseVelocityMap;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }

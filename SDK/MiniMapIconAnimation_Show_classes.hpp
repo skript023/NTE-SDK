@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0068(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BP_PlayAnimation();
-	void BP_UpdateAnimation(float Percentage);
 	void ExecuteUbergraph_MiniMapIconAnimation_Show(int32 EntryPoint);
+	void BP_UpdateAnimation(float Percentage);
+	void BP_PlayAnimation();
 
 public:
 	static class UClass* StaticClass()

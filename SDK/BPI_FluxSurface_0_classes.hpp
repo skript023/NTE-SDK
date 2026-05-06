@@ -21,20 +21,16 @@ namespace SDK
 class BPI_FluxSurface_0::IBPI_FluxSurface_C final
 {
 public:
-	void SpawnSplashAtLocation(const struct FVector& Location, int32 Type);
-	void SetStateHeightWetMap(class UTexture* Texture);
-	void SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State);
-	void SetSignedDistanceFieldMask(class UPDA_FluxSignedDistanceField_C* SignedDistanceField);
-	void SetGeneratorMode(class UStaticMesh* GeneratorMesh, bool Visible);
-	void SetColorPreset(int32 Index_0, class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C* Preset);
-	void SetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C* State);
-	void InitializeAllStates();
-	void GetColorPreset(int32 Index_0, class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C** Preset);
-	void ApplySurfaceNiagaraData(class UNiagaraComponent* ParticleSystem, bool RequiredGround, bool RequiredWave, bool RequreSDF);
-	void ApplySurfaceMaterialData(const TArray<class UMaterialInstanceDynamic*>& Materials, bool Domains, bool Colors);
-	void ApplyPainter();
-	void ApplyMask();
 	void ApplyColorProfiles();
+	void ApplyMask();
+	void ApplyPainter();
+	void ApplySurfaceMaterialData(const TArray<class UMaterialInstanceDynamic*>& Materials);
+	void ApplySurfaceNiagaraData(class UNiagaraComponent* ParticleSystem, bool RequiredGround, bool RequiredWave);
+	void InitializeAllStates();
+	void SetCoastlineState(class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C* State);
+	void SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State);
+	void SetStateHeightWetMap(class UTexture* Texture);
+	void SpawnSplashAtLocation(const struct FVector& Location, int32 Type);
 
 	void GetVolumeCollision(class UPrimitiveComponent** Volume) const;
 

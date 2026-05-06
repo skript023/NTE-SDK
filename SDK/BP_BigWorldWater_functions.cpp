@@ -17,75 +17,73 @@
 namespace SDK
 {
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BigWorldWater.BP_BigWorldWater_C.ExecuteUbergraph_BP_BigWorldWater
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BigWorldWater_C::UserConstructionScript()
+void ABP_BigWorldWater_C::ExecuteUbergraph_BP_BigWorldWater(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "ExecuteUbergraph_BP_BigWorldWater");
+
+	Params::BP_BigWorldWater_C_ExecuteUbergraph_BP_BigWorldWater Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BigWorldWater_C::LoadMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BigWorldWater_C", "LoadMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.UpdateRT
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMobileWaterPlane
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EBE_WaterPlane                          NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BigWorldWater_C::UpdateRT()
+void ABP_BigWorldWater_C::LoadMobileWaterPlane(EBE_WaterPlane NewParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "UpdateRT");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "LoadMobileWaterPlane");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_BigWorldWater_C_LoadMobileWaterPlane Parms{};
+
+	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BigWorldWater_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.PreviewChange
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_BigWorldWater_C::PreviewChange()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "PreviewChange");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5
+// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BigWorldWater_C::OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5(class UObject* Loaded)
+void ABP_BigWorldWater_C::OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F");
 
-	Params::BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5 Parms{};
+	Params::BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -113,19 +111,19 @@ void ABP_BigWorldWater_C::OnLoaded_4561F992483AC0AB74E06B928A4E17A1(class UObjec
 }
 
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F
+// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BigWorldWater_C::OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F(class UObject* Loaded)
+void ABP_BigWorldWater_C::OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5");
 
-	Params::BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F Parms{};
+	Params::BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5 Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -133,57 +131,59 @@ void ABP_BigWorldWater_C::OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F(class UObjec
 }
 
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMobileWaterPlane
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EBE_WaterPlane                          NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BigWorldWater.BP_BigWorldWater_C.PreviewChange
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_BigWorldWater_C::LoadMobileWaterPlane(EBE_WaterPlane NewParam)
+void ABP_BigWorldWater_C::PreviewChange()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "LoadMobileWaterPlane");
-
-	Params::BP_BigWorldWater_C_LoadMobileWaterPlane Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BigWorldWater_C::LoadMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "LoadMaterial");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "PreviewChange");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.ExecuteUbergraph_BP_BigWorldWater
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BigWorldWater.BP_BigWorldWater_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_BigWorldWater_C::ExecuteUbergraph_BP_BigWorldWater(int32 EntryPoint)
+void ABP_BigWorldWater_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BigWorldWater_C", "ExecuteUbergraph_BP_BigWorldWater");
+		Func = Class->GetFunction("BP_BigWorldWater_C", "ReceiveBeginPlay");
 
-	Params::BP_BigWorldWater_C_ExecuteUbergraph_BP_BigWorldWater Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_BigWorldWater.BP_BigWorldWater_C.UpdateRT
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BigWorldWater_C::UpdateRT()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BigWorldWater_C", "UpdateRT");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BigWorldWater_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BigWorldWater_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

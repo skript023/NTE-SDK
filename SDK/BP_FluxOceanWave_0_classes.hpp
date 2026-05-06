@@ -47,7 +47,7 @@ public:
 	double                                        UpdateFramerate;                                   // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TSoftObjectPtr<class UStaticMesh>             DebugMesh;                                         // 0x0358(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UChildActorComponent*                   Editor;                                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* WaveProfile;                                // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* WaveProfile;                                  // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveProfileSize;                                   // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveMovementSpeed;                                 // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveAnimationSpeed;                                // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,7 +82,7 @@ public:
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void SetNiagaraData(class UNiagaraComponent* System, bool RequreWave);
-	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
 	void SetWaveTexture();
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 	void SetZLocation(double New_Location_Z, bool ApplyToSurface);

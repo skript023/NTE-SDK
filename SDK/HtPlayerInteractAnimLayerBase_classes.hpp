@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "HtPlayerInteractAnimLayerBase_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "HTGame_classes.hpp"
+#include "HtPlayerInteractAnimLayerBase_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

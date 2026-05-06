@@ -54,7 +54,7 @@ public:
 	double                                        OceanWaveOffset;                                   // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        UpdateFramerate;                                   // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TSoftObjectPtr<class UStaticMesh>             DebugMesh;                                         // 0x0380(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* WaveProfile;                                  // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* WaveProfile;                                // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveProfileSize;                                   // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveMovementSpeed;                                 // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveAnimationSpeed;                                // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,7 +86,7 @@ public:
 	void SetZLocation(double New_Location_Z, bool ApplyToSurface);
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 	void SetWaveTexture();
-	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
 	void SetSurfaceHeight(double Height, const bool ApplyuToSurface);
 	void SetOceanWaveWindDirection(double BlendDuration, const struct FVector2D& WindDireacrion);
 	void SetNiagaraParameters(class UNiagaraComponent* System, bool RequreWave);

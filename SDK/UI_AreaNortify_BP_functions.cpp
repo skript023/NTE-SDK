@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function UI_AreaNortify_BP.UI_AreaNortify_BP_C.SequenceEvent__ENTRYPOINTUI_AreaNortify_BP
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UUI_AreaNortify_BP_C::SequenceEvent__ENTRYPOINTUI_AreaNortify_BP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_AreaNortify_BP_C", "SequenceEvent__ENTRYPOINTUI_AreaNortify_BP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UI_AreaNortify_BP.UI_AreaNortify_BP_C.SequenceEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UUI_AreaNortify_BP_C::SequenceEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_AreaNortify_BP_C", "SequenceEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function UI_AreaNortify_BP.UI_AreaNortify_BP_C.ExecuteUbergraph_UI_AreaNortify_BP
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void UUI_AreaNortify_BP_C::ExecuteUbergraph_UI_AreaNortify_BP(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UI_AreaNortify_BP.UI_AreaNortify_BP_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UUI_AreaNortify_BP_C::SequenceEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UI_AreaNortify_BP_C", "SequenceEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UI_AreaNortify_BP.UI_AreaNortify_BP_C.SequenceEvent__ENTRYPOINTUI_AreaNortify_BP
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UUI_AreaNortify_BP_C::SequenceEvent__ENTRYPOINTUI_AreaNortify_BP()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UI_AreaNortify_BP_C", "SequenceEvent__ENTRYPOINTUI_AreaNortify_BP");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

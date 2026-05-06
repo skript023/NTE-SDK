@@ -56,9 +56,9 @@ void BPI_FluxWaveRenderer::IBPI_FluxWaveRenderer_C::SetWaveTexture()
 // Function BPI_FluxWaveRenderer.BPI_FluxWaveRenderer_C.SetWaveProfile
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxWaveRenderer::IBPI_FluxWaveRenderer_C::SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile)
+void BPI_FluxWaveRenderer::IBPI_FluxWaveRenderer_C::SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile)
 {
 	static class UFunction* Func = nullptr;
 

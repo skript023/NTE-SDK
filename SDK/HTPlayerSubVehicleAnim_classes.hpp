@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "HTPlayerSubVehicleAnim_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "HTPlayerSubVehicleAnim_structs.hpp"
 #include "HTGame_classes.hpp"
 
 

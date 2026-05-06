@@ -21,12 +21,12 @@ namespace SDK
 class BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C final
 {
 public:
-	void UpdateLoop(double DeltaTime);
-	void StopSimulation();
-	void StartSimulation(double Delay, int32 Iterations);
-	void SelectionLoop(double DeltaTime);
-	void RestartSimulation();
 	void PostLoad(double Delay);
+	void RestartSimulation();
+	void SelectionLoop(double DeltaTime);
+	void StartSimulation(double Delay, int32 Iterations);
+	void StopSimulation();
+	void UpdateLoop(double DeltaTime);
 
 public:
 	static class UClass* StaticClass()

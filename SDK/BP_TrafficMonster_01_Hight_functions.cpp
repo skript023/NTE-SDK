@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function BP_TrafficMonster_01_Hight.BP_TrafficMonster_01_Hight_C.PrepareForPooling
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_TrafficMonster_01_Hight_C::PrepareForPooling()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TrafficMonster_01_Hight_C", "PrepareForPooling");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TrafficMonster_01_Hight.BP_TrafficMonster_01_Hight_C.ExecuteUbergraph_BP_TrafficMonster_01_Hight
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TrafficMonster_01_Hight_C::ExecuteUbergraph_BP_TrafficMonster_01_Hight(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TrafficMonster_01_Hight_C", "ExecuteUbergraph_BP_TrafficMonster_01_Hight");
-
-	Params::BP_TrafficMonster_01_Hight_C_ExecuteUbergraph_BP_TrafficMonster_01_Hight Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_TrafficMonster_01_Hight.BP_TrafficMonster_01_Hight_C.BndEvt__BP_TrafficMonster_01_Hight_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -78,6 +44,40 @@ void ABP_TrafficMonster_01_Hight_C::BndEvt__BP_TrafficMonster_01_Hight_Box_K2Nod
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TrafficMonster_01_Hight.BP_TrafficMonster_01_Hight_C.ExecuteUbergraph_BP_TrafficMonster_01_Hight
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TrafficMonster_01_Hight_C::ExecuteUbergraph_BP_TrafficMonster_01_Hight(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TrafficMonster_01_Hight_C", "ExecuteUbergraph_BP_TrafficMonster_01_Hight");
+
+	Params::BP_TrafficMonster_01_Hight_C_ExecuteUbergraph_BP_TrafficMonster_01_Hight Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TrafficMonster_01_Hight.BP_TrafficMonster_01_Hight_C.PrepareForPooling
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_TrafficMonster_01_Hight_C::PrepareForPooling()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TrafficMonster_01_Hight_C", "PrepareForPooling");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

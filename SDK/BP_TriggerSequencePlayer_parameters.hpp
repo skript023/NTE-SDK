@@ -19,59 +19,35 @@
 namespace SDK::Params
 {
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
-struct BP_TriggerSequencePlayer_C_BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.StopSequence
+// 0x0001 (0x0001 - 0x0000)
+struct BP_TriggerSequencePlayer_C_StopSequence final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          ToStart_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_StopSequence;
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.BPOnMainRoleLoadFinished
-// 0x0008 (0x0008 - 0x0000)
-struct BP_TriggerSequencePlayer_C_BPOnMainRoleLoadFinished final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_TriggerSequencePlayer_C_ReceiveEndPlay final
 {
 public:
-	class AHTPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_BPOnMainRoleLoadFinished;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_ReceiveEndPlay;
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_4F84CBC948E8E59A59041AA68A08EA76
-// 0x0010 (0x0010 - 0x0000)
-struct BP_TriggerSequencePlayer_C_Completed_4F84CBC948E8E59A59041AA68A08EA76 final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.JumpTo
+// 0x0018 (0x0018 - 0x0000)
+struct BP_TriggerSequencePlayer_C_JumpTo final
 {
 public:
-	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        ToSubFrame;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ToFrameNumber;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Time;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_4F84CBC948E8E59A59041AA68A08EA76;
-
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_851A67A34D2962400F547A91DA4D73CD
-// 0x0010 (0x0010 - 0x0000)
-struct BP_TriggerSequencePlayer_C_Completed_851A67A34D2962400F547A91DA4D73CD final
-{
-public:
-	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_851A67A34D2962400F547A91DA4D73CD;
-
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_E284F72344C4C51B2AA45BAA838840D0
-// 0x0010 (0x0010 - 0x0000)
-struct BP_TriggerSequencePlayer_C_Completed_E284F72344C4C51B2AA45BAA838840D0 final
-{
-public:
-	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_E284F72344C4C51B2AA45BAA838840D0;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_JumpTo;
 
 // Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.ExecuteUbergraph_BP_TriggerSequencePlayer
 // 0x05E8 (0x05E8 - 0x0000)
@@ -213,35 +189,59 @@ public:
 };
 DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_ExecuteUbergraph_BP_TriggerSequencePlayer;
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.JumpTo
-// 0x0018 (0x0018 - 0x0000)
-struct BP_TriggerSequencePlayer_C_JumpTo final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_E284F72344C4C51B2AA45BAA838840D0
+// 0x0010 (0x0010 - 0x0000)
+struct BP_TriggerSequencePlayer_C_Completed_E284F72344C4C51B2AA45BAA838840D0 final
 {
 public:
-	double                                        ToSubFrame;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ToFrameNumber;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Time;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_JumpTo;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_E284F72344C4C51B2AA45BAA838840D0;
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_TriggerSequencePlayer_C_ReceiveEndPlay final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_851A67A34D2962400F547A91DA4D73CD
+// 0x0010 (0x0010 - 0x0000)
+struct BP_TriggerSequencePlayer_C_Completed_851A67A34D2962400F547A91DA4D73CD final
 {
 public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_ReceiveEndPlay;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_851A67A34D2962400F547A91DA4D73CD;
 
-// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.StopSequence
-// 0x0001 (0x0001 - 0x0000)
-struct BP_TriggerSequencePlayer_C_StopSequence final
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.Completed_4F84CBC948E8E59A59041AA68A08EA76
+// 0x0010 (0x0010 - 0x0000)
+struct BP_TriggerSequencePlayer_C_Completed_4F84CBC948E8E59A59041AA68A08EA76 final
 {
 public:
-	bool                                          ToStart_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ALevelSequenceActor*                    LevelSequenceActor;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_StopSequence;
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_Completed_4F84CBC948E8E59A59041AA68A08EA76;
+
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.BPOnMainRoleLoadFinished
+// 0x0008 (0x0008 - 0x0000)
+struct BP_TriggerSequencePlayer_C_BPOnMainRoleLoadFinished final
+{
+public:
+	class AHTPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_BPOnMainRoleLoadFinished;
+
+// Function BP_TriggerSequencePlayer.BP_TriggerSequencePlayer_C.BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0128 (0x0128 - 0x0000)
+struct BP_TriggerSequencePlayer_C_BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_TriggerSequencePlayer_C_BndEvt__BP_TriggerSequencePlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
 }
 

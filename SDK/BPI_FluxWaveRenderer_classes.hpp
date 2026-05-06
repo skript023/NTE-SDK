@@ -23,7 +23,7 @@ class BPI_FluxWaveRenderer::IBPI_FluxWaveRenderer_C final
 public:
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 	void SetWaveTexture();
-	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
 	void SetSurfaceHeight(double Height, const bool ApplyuToSurface);
 	void SetNiagaraParameters(class UNiagaraComponent* System, bool RequreWave);
 	void SetMaterialParameters(const TArray<class UMaterialInstanceDynamic*>& Materials);

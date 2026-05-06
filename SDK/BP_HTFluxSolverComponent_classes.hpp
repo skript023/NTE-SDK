@@ -67,7 +67,7 @@ public:
 	TArray<class AActor*>                         InteractionRenderers;                              // 0x01D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          OutputNormalAlpha;                                 // 0x01E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* SimulationState;                    // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* SimulationState;                      // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveDamping;                                       // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WaveTravelSpeed;                                   // 0x0200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        BorderFalloff;                                     // 0x0208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,25 +79,25 @@ public:
 	bool                                          IsVehice;                                          // 0x0229(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateWorldPosition();
+	void ExecuteUbergraph_BP_HTFluxSolverComponent(int32 EntryPoint);
+	void BP_RomoveOverActor(class AActor* acotr);
+	void BP_AddOverActor(class AActor* acotr);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void InitializeSimulation();
+	void JumpToNextFrame(class UTextureRenderTarget2D** PrevFrame, class UTextureRenderTarget2D** CurrentFrame_0, class UTextureRenderTarget2D** NextFrame);
 	void UpdateSimulation(double DeltTime);
 	void UpdateNormalMap(class UTexture* HeightMap);
 	void UpdateInteractions(class UCanvas* Canvas, const struct FVector2D& ScreenSize, double Fraction, int32 Part);
-	void UpdateFocusLocation();
-	void RemoveOverlapping(const class AActor*& OverlapingActor);
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void JumpToNextFrame(class UTextureRenderTarget2D** PrevFrame, class UTextureRenderTarget2D** CurrentFrame_0, class UTextureRenderTarget2D** NextFrame);
-	void InitializeSimulation();
 	void InitializeRenderTarget(class UTextureRenderTarget2D* TextureRenderTarget, ETextureAddress Repeat, ETextureFilter Filter);
-	void GetMaterials(TArray<class UMaterialInstanceDynamic*>* Instances1);
-	void ExecuteUbergraph_BP_HTFluxSolverComponent(int32 EntryPoint);
-	void DisconnctSurface(class AActor* Actor, EEndPlayReason EndPlayReason);
-	void CanRenderInteractions(bool* CanRender);
-	void BP_RomoveOverActor(class AActor* acotr);
-	void BP_AddOverActor(class AActor* acotr);
+	void UpdateWorldPosition();
+	void UpdateFocusLocation();
 	void ApplySimulationOffset();
 	void AddOverlapping(const class AActor*& OverlapingActor);
+	void RemoveOverlapping(const class AActor*& OverlapingActor);
+	void CanRenderInteractions(bool* CanRender);
+	void GetMaterials(TArray<class UMaterialInstanceDynamic*>* Instances1);
+	void DisconnctSurface(class AActor* Actor, EEndPlayReason EndPlayReason);
 
 	struct FVector2D RoundToPixel(struct FVector2D& Location, int32 PixelSize) const;
 

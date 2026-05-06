@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GA_SkillBase_classes.hpp"
 #include "HTGame_structs.hpp"
+#include "GA_SkillBase_classes.hpp"
 
 
 namespace SDK

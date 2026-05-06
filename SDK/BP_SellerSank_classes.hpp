@@ -41,15 +41,15 @@ public:
 	TSoftObjectPtr<class AStaticMeshActor>        RelatedMeshStair;                                  // 0x0C68(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void Cus_Sink();
-	void ExecuteUbergraph_BP_SellerSank(int32 EntryPoint);
-	void OnLoaded_100433F541EDC95D45F160A572E9EDE0(class UObject* Loaded);
-	void OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1(class UObject* Loaded);
-	void OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1(class UObject* Loaded);
-	void OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4(class UObject* Loaded);
-	void ReceiveBeginPlay();
-	void SetRelative(class UStaticMeshComponent* MeshComp);
 	void StoneMove(class UStaticMeshComponent* MeshComp);
+	void SetRelative(class UStaticMeshComponent* MeshComp);
+	void ReceiveBeginPlay();
+	void OnLoaded_D26588E341E8AA1911DE95AC2FC5A4E4(class UObject* Loaded);
+	void OnLoaded_CF4662AE498F6A7E06A36DA7AE72F2E1(class UObject* Loaded);
+	void OnLoaded_2728F00C40E7D1BFE2F5A5974562D3F1(class UObject* Loaded);
+	void OnLoaded_100433F541EDC95D45F160A572E9EDE0(class UObject* Loaded);
+	void ExecuteUbergraph_BP_SellerSank(int32 EntryPoint);
+	void Cus_Sink();
 
 public:
 	static class UClass* StaticClass()

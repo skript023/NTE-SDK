@@ -27,9 +27,9 @@ public:
 	class UMaterialInterface*                     ReadVelocityMaterial;                              // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GenerateMesh(class UProceduralMeshComponent* InitMesh, class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* InitState, int32 LOD, class UMaterialInterface* Material, uint8 Padding, int32* Vetticles, int32* Polygons);
+	void GenerateMesh(class UProceduralMeshComponent* InitMesh, class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* InitState, int32 LOD, class UMaterialInterface* Material, uint8 Padding, int32* Vetticles, int32* Polygons);
 	void GetTriangle(TArray<int32>& Array, int32 Index_0, int32* One, int32* Two, int32* Three);
-	void InitializeBuffers(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State, uint8 EdgePadding, double FoamScale);
+	void InitializeBuffers(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State, uint8 EdgePadding, double FoamScale);
 	void ReadWater(const struct FVector2D& uv, struct FVector2D* Velocity, double* Water, double* Foam);
 
 	void ReadHeight(struct FVector2D& uv, double* Height) const;

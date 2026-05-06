@@ -138,9 +138,9 @@ void ABP_FluxInteractionCapture_Vehicle_C::GetCoastlineState(class PDA_FluxCoast
 // Function BP_FluxInteractionCapture_Vehicle.BP_FluxInteractionCapture_Vehicle_C.GetSimulationState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FluxInteractionCapture_Vehicle_C::GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State)
+void ABP_FluxInteractionCapture_Vehicle_C::GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State)
 {
 	static class UFunction* Func = nullptr;
 

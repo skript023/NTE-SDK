@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BE_WaterPlane_structs.hpp"
+#include "Engine_structs.hpp"
 #include "HTGame_classes.hpp"
 
 
@@ -35,16 +35,16 @@ public:
 	TSoftObjectPtr<class UStaticMesh>             CustomMesh;                                        // 0x0360(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void UpdateRT();
-	void ReceiveBeginPlay();
-	void PreviewChange();
-	void OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5(class UObject* Loaded);
-	void OnLoaded_4561F992483AC0AB74E06B928A4E17A1(class UObject* Loaded);
-	void OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F(class UObject* Loaded);
-	void LoadMobileWaterPlane(EBE_WaterPlane NewParam);
-	void LoadMaterial();
 	void ExecuteUbergraph_BP_BigWorldWater(int32 EntryPoint);
+	void LoadMaterial();
+	void LoadMobileWaterPlane(EBE_WaterPlane NewParam);
+	void OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F(class UObject* Loaded);
+	void OnLoaded_4561F992483AC0AB74E06B928A4E17A1(class UObject* Loaded);
+	void OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5(class UObject* Loaded);
+	void PreviewChange();
+	void ReceiveBeginPlay();
+	void UpdateRT();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

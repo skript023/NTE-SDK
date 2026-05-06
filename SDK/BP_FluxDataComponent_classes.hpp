@@ -21,54 +21,59 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_FluxDataComponent.BP_FluxDataComponent_C
 // 0x00D8 (0x0198 - 0x00C0)
-class BP_FluxDataComponent::UBP_FluxDataComponent_C final : public UActorComponent
+class BP_FluxDataComponent::UBP_FluxDataComponent_C : public UActorComponent
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<struct FVector>                        ReadbackLocations;                                 // 0x00C8(0x0010)(Edit, BlueprintVisible)
 	double                                        ReadbackEventInterval;                             // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         CustomReadbackSystem;                              // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          FindWorldSurface;                                  // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsAfterReadback;                                   // 0x00E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        FluxFluidHeight;                                   // 0x00F0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FluxSurfaceLocation;                               // 0x00F8(0x0018)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FluxFluidVelocity;                                 // 0x0110(0x0018)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem)> OnReceiveParticleData; // 0x0128(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          UseGroundMap;                                      // 0x0138(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseWave;                                           // 0x0139(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13A[0x2];                                      // 0x013A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   OwnerComponentTag;                                 // 0x013C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   OwnerSocketName;                                   // 0x0144(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FluxFluidNormal;                                   // 0x0150(0x0018)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      ExportDataInstance;                                // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 SurfaceActor;                                      // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          DrawDebug;                                         // 0x0178(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FBasicParticleData>             ReadbackData;                                      // 0x0180(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	double                                        SampleTime;                                        // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ReadbackEventIntervalRandom;                       // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         CustomReadbackSystem;                              // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          FindWorldSurface;                                  // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      ExportDataInstance;                                // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseCPU_experimental_;                              // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsAfterReadback;                                   // 0x0101(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        FluxFluidHeight;                                   // 0x0108(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FluxSurfaceLocation;                               // 0x0110(0x0018)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FluxFluidVelocity;                                 // 0x0128(0x0018)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem)> OnReceiveParticleData; // 0x0140(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          UseGroundMap;                                      // 0x0150(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseSDF;                                            // 0x0151(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseWave;                                           // 0x0152(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_153[0x1];                                      // 0x0153(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   OwnerComponentTag;                                 // 0x0154(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   OwnerSocketName;                                   // 0x015C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SurfaceActor;                                      // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          DrawDebug;                                         // 0x0170(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FBasicParticleData>             ReadbackData;                                      // 0x0178(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                        SampleTime;                                        // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHTFluxInteractionComponent*            HTFluxInteraction;                                 // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Activation(class UActorComponent* Component, bool bReset);
-	void ApplyNiagaraParameters();
-	void Deactivation(class UActorComponent* Component);
-	void ExecuteUbergraph_BP_FluxDataComponent(int32 EntryPoint);
-	void Get_Readback_Indexed_Position(int32 Index_0, struct FVector* Location, struct FVector* Velocity, double* Height);
-	void InitEventListener();
-	void ReadParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
-	void ReceiveReadData(const TArray<struct FBasicParticleData>& Data);
-	void RemoveEventListener();
-	void SetPointData(struct FBasicParticleData& ParticleDataStructure);
-	void SetQuadData(TArray<struct FBasicParticleData>& ParticleDataStructure);
+	void SetSurfaceActor(const class AActor*& Actor);
 	void SetRelativeSamplePoints(TArray<struct FVector>& Points);
-	void SetSurfaceActor(const class AActor*& Interface);
+	void SetPointData(struct FBasicParticleData& ParticleDataStructure);
+	void SetArrayData(TArray<struct FBasicParticleData>& ParticleDataStructure);
+	void RemoveEventListener();
+	void ReceiveReadData(const TArray<struct FBasicParticleData>& Data);
+	void ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem, const struct FVector& SimulationPositionOffset);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void ReadParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem);
+	void InitEventListener();
+	void GetReadbackIndexedPosition(int32 Index_0, struct FVector* Location, struct FVector* Velocity, double* Height);
+	void ExecuteUbergraph_BP_FluxDataComponent(int32 EntryPoint);
+	void DebugSample();
+	void Deactivation(class UActorComponent* Component);
+	void ApplyNiagaraParameters();
+	void Activation(class UActorComponent* Component, bool bReset);
 
-	void GetOwnerComponent(class USceneComponent** SceneComponent) const;
 	void GetWorldSurface(class AActor** Output) const;
+	void GetOwnerComponent(class USceneComponent** SceneComponent) const;
 
 public:
 	static class UClass* StaticClass()

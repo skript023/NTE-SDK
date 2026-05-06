@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MonsterFootIK_AnimLayer_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MonsterFootIK_AnimLayer_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "HTGame_classes.hpp"
 

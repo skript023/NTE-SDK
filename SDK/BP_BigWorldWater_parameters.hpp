@@ -18,76 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BigWorldWater.BP_BigWorldWater_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_BigWorldWater_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_IsEditor_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_UserConstructionScript;
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5;
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_4561F992483AC0AB74E06B928A4E17A1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BigWorldWater_C_OnLoaded_4561F992483AC0AB74E06B928A4E17A1 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_4561F992483AC0AB74E06B928A4E17A1;
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F;
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMobileWaterPlane
-// 0x0020 (0x0020 - 0x0000)
-struct BP_BigWorldWater_C_LoadMobileWaterPlane final
-{
-public:
-	EBE_WaterPlane                                NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_DynamicCast_As_____;                        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_LoadMobileWaterPlane;
-
-// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMaterial
-// 0x0038 (0x0038 - 0x0000)
-struct BP_BigWorldWater_C_LoadMaterial final
-{
-public:
-	bool                                          CallFunc_IsPreviewMobile_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As____;                         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      K2Node_DynamicCast_As_____1;                       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMobilePlatform_ReturnValue;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BigWorldWater_C_LoadMaterial;
-
 // Function BP_BigWorldWater.BP_BigWorldWater_C.ExecuteUbergraph_BP_BigWorldWater
 // 0x03C0 (0x03C0 - 0x0000)
 struct BP_BigWorldWater_C_ExecuteUbergraph_BP_BigWorldWater final
@@ -133,6 +63,76 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BigWorldWater_C_ExecuteUbergraph_BP_BigWorldWater;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMaterial
+// 0x0038 (0x0038 - 0x0000)
+struct BP_BigWorldWater_C_LoadMaterial final
+{
+public:
+	bool                                          CallFunc_IsPreviewMobile_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As____;                         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      K2Node_DynamicCast_As_____1;                       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMobilePlatform_ReturnValue;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_LoadMaterial;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.LoadMobileWaterPlane
+// 0x0020 (0x0020 - 0x0000)
+struct BP_BigWorldWater_C_LoadMobileWaterPlane final
+{
+public:
+	EBE_WaterPlane                                NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_DynamicCast_As_____;                        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_LoadMobileWaterPlane;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_41C07BCC42DA024D6EC6E89BFDAC814F;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_4561F992483AC0AB74E06B928A4E17A1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BigWorldWater_C_OnLoaded_4561F992483AC0AB74E06B928A4E17A1 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_4561F992483AC0AB74E06B928A4E17A1;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_OnLoaded_7F59DBDA4A8103152ADBDB8DFDB4FBF5;
+
+// Function BP_BigWorldWater.BP_BigWorldWater_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_BigWorldWater_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_IsEditor_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BigWorldWater_C_UserConstructionScript;
 
 }
 

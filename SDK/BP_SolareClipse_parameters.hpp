@@ -16,6 +16,69 @@
 namespace SDK::Params
 {
 
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A6DA212449794ED83A8860953E8E760D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_78475ABC47D60786FB7497B699176E1F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_224FD41B44E2229C71DE0A8A0C650B20
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20;
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_035778F240286C47FC8D7C8CE7D92106
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106;
+
 // Function BP_SolareClipse.BP_SolareClipse_C.ExecuteUbergraph_BP_SolareClipse
 // 0x04E0 (0x04E0 - 0x0000)
 struct BP_SolareClipse_C_ExecuteUbergraph_BP_SolareClipse final
@@ -111,69 +174,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x04D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SolareClipse_C_ExecuteUbergraph_BP_SolareClipse;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_035778F240286C47FC8D7C8CE7D92106
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_224FD41B44E2229C71DE0A8A0C650B20
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_78475ABC47D60786FB7497B699176E1F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B;
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A6DA212449794ED83A8860953E8E760D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D;
 
 }
 

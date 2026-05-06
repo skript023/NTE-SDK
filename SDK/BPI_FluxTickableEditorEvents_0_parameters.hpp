@@ -14,23 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.PostLoad
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.UpdateLoop
 // 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxTickableEditorEvents_C_PostLoad final
-{
-public:
-	double                                        Delay;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_PostLoad;
-
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.SelectionLoop
-// 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxTickableEditorEvents_C_SelectionLoop final
+struct BPI_FluxTickableEditorEvents_C_UpdateLoop final
 {
 public:
 	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_SelectionLoop;
+DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_UpdateLoop;
 
 // Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.StartSimulation
 // 0x0010 (0x0010 - 0x0000)
@@ -42,14 +33,23 @@ public:
 };
 DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_StartSimulation;
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.UpdateLoop
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.SelectionLoop
 // 0x0008 (0x0008 - 0x0000)
-struct BPI_FluxTickableEditorEvents_C_UpdateLoop final
+struct BPI_FluxTickableEditorEvents_C_SelectionLoop final
 {
 public:
 	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_UpdateLoop;
+DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_SelectionLoop;
+
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.PostLoad
+// 0x0008 (0x0008 - 0x0000)
+struct BPI_FluxTickableEditorEvents_C_PostLoad final
+{
+public:
+	double                                        Delay;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPI_FluxTickableEditorEvents_C_PostLoad;
 
 }
 

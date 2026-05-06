@@ -27,9 +27,9 @@ public:
 	class UImage*                                 Image_Line_393;                                    // 0x0F48(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SequenceEvent__ENTRYPOINTUI_AreaNortify_BP();
-	void SequenceEvent();
 	void ExecuteUbergraph_UI_AreaNortify_BP(int32 EntryPoint);
+	void SequenceEvent();
+	void SequenceEvent__ENTRYPOINTUI_AreaNortify_BP();
 
 public:
 	static class UClass* StaticClass()

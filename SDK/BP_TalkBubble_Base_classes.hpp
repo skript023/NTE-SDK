@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_TalkBubble_Base.BP_TalkBubble_Base_C
 // 0x0088 (0x0C18 - 0x0B90)
-class ABP_TalkBubble_Base_C final : public AHTTalkBubbleTriggerActor
+class ABP_TalkBubble_Base_C : public AHTTalkBubbleTriggerActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

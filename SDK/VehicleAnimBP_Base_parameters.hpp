@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function VehicleAnimBP_Base.VehicleAnimBP_Base_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct VehicleAnimBP_Base_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_VehicleAnimBP_Base_C_AnimGraph;
+
+// Function VehicleAnimBP_Base.VehicleAnimBP_Base_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct VehicleAnimBP_Base_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_VehicleAnimBP_Base_C_BlueprintUpdateAnimation;
+
 // Function VehicleAnimBP_Base.VehicleAnimBP_Base_C.ExecuteUbergraph_VehicleAnimBP_Base
 // 0x0080 (0x0080 - 0x0000)
 struct VehicleAnimBP_Base_C_ExecuteUbergraph_VehicleAnimBP_Base final
@@ -64,24 +82,6 @@ public:
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast_3;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_VehicleAnimBP_Base_C_ExecuteUbergraph_VehicleAnimBP_Base;
-
-// Function VehicleAnimBP_Base.VehicleAnimBP_Base_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct VehicleAnimBP_Base_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_VehicleAnimBP_Base_C_BlueprintUpdateAnimation;
-
-// Function VehicleAnimBP_Base.VehicleAnimBP_Base_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct VehicleAnimBP_Base_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_VehicleAnimBP_Base_C_AnimGraph;
 
 }
 

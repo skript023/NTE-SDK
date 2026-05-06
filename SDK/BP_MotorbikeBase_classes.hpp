@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_MotorbikeBase.BP_MotorbikeBase_C
 // 0x0090 (0x15E0 - 0x1550)
-class ABP_MotorbikeBase_C final : public AHTMotorbikeBase
+class ABP_MotorbikeBase_C : public AHTMotorbikeBase
 {
 public:
 	class UHTAIRVOComponent*                      HTAIRVO;                                           // 0x1550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

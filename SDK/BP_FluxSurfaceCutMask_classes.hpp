@@ -10,25 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "HTGame_classes.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FluxSurfaceCutMask.BP_FluxSurfaceCutMask_C
-// 0x0010 (0x0B90 - 0x0B80)
-class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C final : public AHTVisualActor
+// 0x0008 (0x02D0 - 0x02C8)
+class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B80(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Box;                                               // 0x0B88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_FluxSurfaceCutMask(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

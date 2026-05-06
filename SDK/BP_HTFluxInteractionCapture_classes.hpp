@@ -50,7 +50,7 @@ public:
 	void ReceiveBeginPlay();
 	void PreviewDebugArea();
 	void InitializeArea();
-	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
 	void GetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C** State);
 	void ExecuteUbergraph_BP_HTFluxInteractionCapture(int32 EntryPoint);
 	void changePlayer(class AHTPlayerCharacter* OldPlayerCharacter, class AHTPlayerCharacter* NewPlayerCharacter);

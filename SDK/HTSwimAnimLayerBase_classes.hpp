@@ -12,8 +12,8 @@
 
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
-#include "HTSwimAnimLayerBase_structs.hpp"
 #include "Engine_structs.hpp"
+#include "HTSwimAnimLayerBase_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 
 

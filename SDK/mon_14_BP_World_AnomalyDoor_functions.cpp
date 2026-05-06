@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function mon_14_BP_World_AnomalyDoor.mon_14_BP_World_AnomalyDoor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Amon_14_BP_World_AnomalyDoor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("mon_14_BP_World_AnomalyDoor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function mon_14_BP_World_AnomalyDoor.mon_14_BP_World_AnomalyDoor_C.OnBeginBattle
-// (Event, Public, BlueprintEvent)
-
-void Amon_14_BP_World_AnomalyDoor_C::OnBeginBattle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("mon_14_BP_World_AnomalyDoor_C", "OnBeginBattle");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function mon_14_BP_World_AnomalyDoor.mon_14_BP_World_AnomalyDoor_C.ExecuteUbergraph_mon_14_BP_World_AnomalyDoor
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void Amon_14_BP_World_AnomalyDoor_C::ExecuteUbergraph_mon_14_BP_World_AnomalyDoo
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mon_14_BP_World_AnomalyDoor.mon_14_BP_World_AnomalyDoor_C.OnBeginBattle
+// (Event, Public, BlueprintEvent)
+
+void Amon_14_BP_World_AnomalyDoor_C::OnBeginBattle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mon_14_BP_World_AnomalyDoor_C", "OnBeginBattle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mon_14_BP_World_AnomalyDoor.mon_14_BP_World_AnomalyDoor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Amon_14_BP_World_AnomalyDoor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mon_14_BP_World_AnomalyDoor_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

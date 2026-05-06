@@ -49,11 +49,11 @@ void AWeather_Mask_Projection_Box_C::Update_Capture()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDS_DLWE_Mode_0::EUDS_DLWE_Mode         Mode                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDS_DLWE_Mode::EUDS_DLWE_Mode           Mode                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   In_Volume                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double*                                 Occlusion                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWeather_Mask_Projection_Box_C::Test_Point_Occlusion(const struct FVector& Location, UDS_DLWE_Mode_0::EUDS_DLWE_Mode Mode, bool* In_Volume, double* Occlusion)
+void AWeather_Mask_Projection_Box_C::Test_Point_Occlusion(const struct FVector& Location, UDS_DLWE_Mode::EUDS_DLWE_Mode Mode, bool* In_Volume, double* Occlusion)
 {
 	static class UFunction* Func = nullptr;
 

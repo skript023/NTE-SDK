@@ -17,141 +17,23 @@
 namespace SDK
 {
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyColorProfiles
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyColorProfiles()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyColorProfiles");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyMask
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyMask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyMask");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyPainter
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyPainter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyPainter");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceMaterialData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class UMaterialInstanceDynamic*>&Materials                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::ApplySurfaceMaterialData(const TArray<class UMaterialInstanceDynamic*>& Materials)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplySurfaceMaterialData");
-
-	Params::BPI_FluxSurface_C_ApplySurfaceMaterialData Parms{};
-
-	Parms.Materials = std::move(Materials);
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceNiagaraData
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SpawnSplashAtLocation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UNiagaraComponent*                ParticleSystem                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    RequiredGround                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    RequiredWave                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxSurface::IBPI_FluxSurface_C::ApplySurfaceNiagaraData(class UNiagaraComponent* ParticleSystem, bool RequiredGround, bool RequiredWave)
+void BPI_FluxSurface::IBPI_FluxSurface_C::SpawnSplashAtLocation(const struct FVector& Location, int32 Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplySurfaceNiagaraData");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SpawnSplashAtLocation");
 
-	Params::BPI_FluxSurface_C_ApplySurfaceNiagaraData Parms{};
+	Params::BPI_FluxSurface_C_SpawnSplashAtLocation Parms{};
 
-	Parms.ParticleSystem = ParticleSystem;
-	Parms.RequiredGround = RequiredGround;
-	Parms.RequiredWave = RequiredWave;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.InitializeAllStates
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::InitializeAllStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "InitializeAllStates");
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetCoastlineState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::SetCoastlineState(class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C* State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetCoastlineState");
-
-	Params::BPI_FluxSurface_C_SetCoastlineState Parms{};
-
-	Parms.State = State;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SetSimulationState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void BPI_FluxSurface::IBPI_FluxSurface_C::SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetSimulationState");
-
-	Params::BPI_FluxSurface_C_SetSimulationState Parms{};
-
-	Parms.State = State;
+	Parms.Location = std::move(Location);
+	Parms.Type = Type;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }
@@ -177,25 +59,237 @@ void BPI_FluxSurface::IBPI_FluxSurface_C::SetStateHeightWetMap(class UTexture* T
 }
 
 
-// Function BPI_FluxSurface.BPI_FluxSurface_C.SpawnSplashAtLocation
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetSimulationState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxSurface::IBPI_FluxSurface_C::SpawnSplashAtLocation(const struct FVector& Location, int32 Type)
+void BPI_FluxSurface::IBPI_FluxSurface_C::SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SpawnSplashAtLocation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetSimulationState");
 
-	Params::BPI_FluxSurface_C_SpawnSplashAtLocation Parms{};
+	Params::BPI_FluxSurface_C_SetSimulationState Parms{};
 
-	Parms.Location = std::move(Location);
-	Parms.Type = Type;
+	Parms.State = State;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetSignedDistanceFieldMask
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPDA_FluxSignedDistanceField_C*   SignedDistanceField                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::SetSignedDistanceFieldMask(class UPDA_FluxSignedDistanceField_C* SignedDistanceField)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetSignedDistanceFieldMask");
+
+	Params::BPI_FluxSurface_C_SetSignedDistanceFieldMask Parms{};
+
+	Parms.SignedDistanceField = SignedDistanceField;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetGeneratorMode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UStaticMesh*                      GeneratorMesh                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::SetGeneratorMode(class UStaticMesh* GeneratorMesh, bool Visible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetGeneratorMode");
+
+	Params::BPI_FluxSurface_C_SetGeneratorMode Parms{};
+
+	Parms.GeneratorMesh = GeneratorMesh;
+	Parms.Visible = Visible;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetColorPreset
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C*Preset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::SetColorPreset(int32 Index_0, class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C* Preset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetColorPreset");
+
+	Params::BPI_FluxSurface_C_SetColorPreset Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Preset = Preset;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.SetCoastlineState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::SetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C* State)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "SetCoastlineState");
+
+	Params::BPI_FluxSurface_C_SetCoastlineState Parms{};
+
+	Parms.State = State;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.InitializeAllStates
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::InitializeAllStates()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "InitializeAllStates");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.GetColorPreset
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C**Preset                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::GetColorPreset(int32 Index_0, class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C** Preset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "GetColorPreset");
+
+	Params::BPI_FluxSurface_C_GetColorPreset Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	if (Preset != nullptr)
+		*Preset = Parms.Preset;
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceNiagaraData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraComponent*                ParticleSystem                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    RequiredGround                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    RequiredWave                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    RequreSDF                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::ApplySurfaceNiagaraData(class UNiagaraComponent* ParticleSystem, bool RequiredGround, bool RequiredWave, bool RequreSDF)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplySurfaceNiagaraData");
+
+	Params::BPI_FluxSurface_C_ApplySurfaceNiagaraData Parms{};
+
+	Parms.ParticleSystem = ParticleSystem;
+	Parms.RequiredGround = RequiredGround;
+	Parms.RequiredWave = RequiredWave;
+	Parms.RequreSDF = RequreSDF;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplySurfaceMaterialData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class UMaterialInstanceDynamic*>&Materials                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    Domains                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Colors                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::ApplySurfaceMaterialData(const TArray<class UMaterialInstanceDynamic*>& Materials, bool Domains, bool Colors)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplySurfaceMaterialData");
+
+	Params::BPI_FluxSurface_C_ApplySurfaceMaterialData Parms{};
+
+	Parms.Materials = std::move(Materials);
+	Parms.Domains = Domains;
+	Parms.Colors = Colors;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyPainter
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyPainter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyPainter");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyMask
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyMask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyMask");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxSurface.BPI_FluxSurface_C.ApplyColorProfiles
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void BPI_FluxSurface::IBPI_FluxSurface_C::ApplyColorProfiles()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxSurface_C", "ApplyColorProfiles");
+
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 

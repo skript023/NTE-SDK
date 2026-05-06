@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "MassNpc_AnimBP_Base_structs.hpp"
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "MassNpc_AnimBP_Base_structs.hpp"
 #include "AnimationWarpingRuntime_structs.hpp"
 
 

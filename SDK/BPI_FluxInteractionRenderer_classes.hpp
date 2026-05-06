@@ -25,7 +25,7 @@ public:
 	void SetInteractionsTexture(class UTextureRenderTarget2D* Texture);
 	void SetInteractionsAreaTrain(const struct FLinearColor& Area);
 	void SetInteractionsArea(const struct FLinearColor& Area);
-	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
 	void GetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C** State);
 
 public:

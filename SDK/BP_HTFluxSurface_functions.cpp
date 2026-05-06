@@ -176,9 +176,9 @@ void ABP_HTFluxSurface_C::SetWaveTexture()
 // Function BP_HTFluxSurface.BP_HTFluxSurface_C.SetWaveProfile
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HTFluxSurface_C::SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile)
+void ABP_HTFluxSurface_C::SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile)
 {
 	static class UFunction* Func = nullptr;
 
@@ -278,9 +278,9 @@ void ABP_HTFluxSurface_C::SetStateHeightWetMap(class UTexture* Texture)
 // Function BP_HTFluxSurface.BP_HTFluxSurface_C.SetSimulationState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HTFluxSurface_C::SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State)
+void ABP_HTFluxSurface_C::SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State)
 {
 	static class UFunction* Func = nullptr;
 
@@ -839,9 +839,9 @@ void ABP_HTFluxSurface_C::InitializeAllStates()
 // Function BP_HTFluxSurface.BP_HTFluxSurface_C.GetSimulationState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HTFluxSurface_C::GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State)
+void ABP_HTFluxSurface_C::GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State)
 {
 	static class UFunction* Func = nullptr;
 

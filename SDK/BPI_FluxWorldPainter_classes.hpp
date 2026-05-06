@@ -21,9 +21,9 @@ namespace SDK
 class BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C final
 {
 public:
-	void ApplyMaterialParameters(const TArray<class UMaterialInstanceDynamic*>& Materials);
-	void OnRepaintBrushes();
 	void RenderScenePainter();
+	void OnRepaintBrushes();
+	void ApplyMaterialParameters(const TArray<class UMaterialInstanceDynamic*>& Materials);
 
 public:
 	static class UClass* StaticClass()

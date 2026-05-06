@@ -174,9 +174,9 @@ void UDLWE_InteractionNew_C::Distance_Check()
 // Function DLWE_InteractionNew.DLWE_InteractionNew_C.DLWE Mode Change
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// UDS_DLWE_Mode::EUDS_DLWE_Mode           New_Mode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDS_DLWE_Mode_0::EUDS_DLWE_Mode         New_Mode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDLWE_InteractionNew_C::DLWE_Mode_Change(UDS_DLWE_Mode::EUDS_DLWE_Mode New_Mode)
+void UDLWE_InteractionNew_C::DLWE_Mode_Change(UDS_DLWE_Mode_0::EUDS_DLWE_Mode New_Mode)
 {
 	static class UFunction* Func = nullptr;
 

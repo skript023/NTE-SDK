@@ -17,17 +17,14 @@
 namespace SDK::Params
 {
 
-// Function ABP_mon_016_Shake.ABP_mon_016_Shake_C.ShakeBoneLayer
-// 0x0030 (0x0030 - 0x0000)
-struct ABP_mon_016_Shake_C_ShakeBoneLayer final
+// Function ABP_mon_016_Shake.ABP_mon_016_Shake_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_mon_016_Shake_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	double                                        PushScale_0;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        BlendAlpha_0;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPoseLink                              ShakeBoneLayer_0;                                  // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_mon_016_Shake_C_ShakeBoneLayer;
+DUMPER7_ASSERTS_ABP_mon_016_Shake_C_AnimGraph;
 
 // Function ABP_mon_016_Shake.ABP_mon_016_Shake_C.ExecuteUbergraph_ABP_mon_016_Shake
 // 0x00E8 (0x00E8 - 0x0000)
@@ -58,14 +55,17 @@ public:
 };
 DUMPER7_ASSERTS_ABP_mon_016_Shake_C_ExecuteUbergraph_ABP_mon_016_Shake;
 
-// Function ABP_mon_016_Shake.ABP_mon_016_Shake_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_mon_016_Shake_C_AnimGraph final
+// Function ABP_mon_016_Shake.ABP_mon_016_Shake_C.ShakeBoneLayer
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_mon_016_Shake_C_ShakeBoneLayer final
 {
 public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	double                                        PushScale_0;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        BlendAlpha_0;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              ShakeBoneLayer_0;                                  // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_mon_016_Shake_C_AnimGraph;
+DUMPER7_ASSERTS_ABP_mon_016_Shake_C_ShakeBoneLayer;
 
 }
 

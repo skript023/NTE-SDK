@@ -17,133 +17,47 @@
 namespace SDK
 {
 
-// Function BP_SolareClipse.BP_SolareClipse_C.ExecuteUbergraph_BP_SolareClipse
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SolareClipse.BP_SolareClipse_C.TestInit
+// (Event, Public, BlueprintEvent)
 
-void ABP_SolareClipse_C::ExecuteUbergraph_BP_SolareClipse(int32 EntryPoint)
+void ABP_SolareClipse_C::TestInit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "ExecuteUbergraph_BP_SolareClipse");
-
-	Params::BP_SolareClipse_C_ExecuteUbergraph_BP_SolareClipse Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SolareClipse.BP_SolareClipse_C.InitVolume
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SolareClipse_C::InitVolume()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "InitVolume");
+		Func = Class->GetFunction("BP_SolareClipse_C", "TestInit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_035778F240286C47FC8D7C8CE7D92106
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// Function BP_SolareClipse.BP_SolareClipse_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SolareClipse_C::OnLoaded_035778F240286C47FC8D7C8CE7D92106(TSubclassOf<class UObject> Loaded)
+void ABP_SolareClipse_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_035778F240286C47FC8D7C8CE7D92106");
+		Func = Class->GetFunction("BP_SolareClipse_C", "ReceiveBeginPlay");
 
-	Params::BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_224FD41B44E2229C71DE0A8A0C650B20
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A6DA212449794ED83A8860953E8E760D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
-void ABP_SolareClipse_C::OnLoaded_224FD41B44E2229C71DE0A8A0C650B20(TSubclassOf<class UObject> Loaded)
+void ABP_SolareClipse_C::OnLoaded_A6DA212449794ED83A8860953E8E760D(TSubclassOf<class UObject> Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_224FD41B44E2229C71DE0A8A0C650B20");
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_A6DA212449794ED83A8860953E8E760D");
 
-	Params::BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-void ABP_SolareClipse_C::OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25(TSubclassOf<class UObject> Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25");
-
-	Params::BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_78475ABC47D60786FB7497B699176E1F
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-void ABP_SolareClipse_C::OnLoaded_78475ABC47D60786FB7497B699176E1F(TSubclassOf<class UObject> Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_78475ABC47D60786FB7497B699176E1F");
-
-	Params::BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-void ABP_SolareClipse_C::OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8(TSubclassOf<class UObject> Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8");
-
-	Params::BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8 Parms{};
+	Params::BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -171,19 +85,19 @@ void ABP_SolareClipse_C::OnLoaded_A352304B4A1AFCA52E578DAB04BF9B9B(TSubclassOf<c
 }
 
 
-// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_A6DA212449794ED83A8860953E8E760D
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
-void ABP_SolareClipse_C::OnLoaded_A6DA212449794ED83A8860953E8E760D(TSubclassOf<class UObject> Loaded)
+void ABP_SolareClipse_C::OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8(TSubclassOf<class UObject> Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_A6DA212449794ED83A8860953E8E760D");
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8");
 
-	Params::BP_SolareClipse_C_OnLoaded_A6DA212449794ED83A8860953E8E760D Parms{};
+	Params::BP_SolareClipse_C_OnLoaded_95EFEDC947517D12BFDD4FA49F0C73C8 Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -191,31 +105,117 @@ void ABP_SolareClipse_C::OnLoaded_A6DA212449794ED83A8860953E8E760D(TSubclassOf<c
 }
 
 
-// Function BP_SolareClipse.BP_SolareClipse_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_78475ABC47D60786FB7497B699176E1F
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
-void ABP_SolareClipse_C::ReceiveBeginPlay()
+void ABP_SolareClipse_C::OnLoaded_78475ABC47D60786FB7497B699176E1F(TSubclassOf<class UObject> Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_78475ABC47D60786FB7497B699176E1F");
+
+	Params::BP_SolareClipse_C_OnLoaded_78475ABC47D60786FB7497B699176E1F Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void ABP_SolareClipse_C::OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25(TSubclassOf<class UObject> Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25");
+
+	Params::BP_SolareClipse_C_OnLoaded_2CFBC08B4D2DE2B6BE9275B09F0AFE25 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_224FD41B44E2229C71DE0A8A0C650B20
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void ABP_SolareClipse_C::OnLoaded_224FD41B44E2229C71DE0A8A0C650B20(TSubclassOf<class UObject> Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_224FD41B44E2229C71DE0A8A0C650B20");
+
+	Params::BP_SolareClipse_C_OnLoaded_224FD41B44E2229C71DE0A8A0C650B20 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SolareClipse.BP_SolareClipse_C.OnLoaded_035778F240286C47FC8D7C8CE7D92106
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void ABP_SolareClipse_C::OnLoaded_035778F240286C47FC8D7C8CE7D92106(TSubclassOf<class UObject> Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SolareClipse_C", "OnLoaded_035778F240286C47FC8D7C8CE7D92106");
+
+	Params::BP_SolareClipse_C_OnLoaded_035778F240286C47FC8D7C8CE7D92106 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SolareClipse.BP_SolareClipse_C.InitVolume
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SolareClipse_C::InitVolume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SolareClipse_C", "InitVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SolareClipse.BP_SolareClipse_C.TestInit
-// (Event, Public, BlueprintEvent)
+// Function BP_SolareClipse.BP_SolareClipse_C.ExecuteUbergraph_BP_SolareClipse
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SolareClipse_C::TestInit()
+void ABP_SolareClipse_C::ExecuteUbergraph_BP_SolareClipse(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SolareClipse_C", "TestInit");
+		Func = Class->GetFunction("BP_SolareClipse_C", "ExecuteUbergraph_BP_SolareClipse");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SolareClipse_C_ExecuteUbergraph_BP_SolareClipse Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

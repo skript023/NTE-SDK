@@ -11,7 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UDS_DLWE_Mode_0_structs.hpp"
+#include "UDS_DLWE_Mode_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "HTGame_classes.hpp"
 
@@ -51,7 +51,7 @@ public:
 public:
 	void UserConstructionScript();
 	void Update_Capture();
-	void Test_Point_Occlusion(const struct FVector& Location, UDS_DLWE_Mode_0::EUDS_DLWE_Mode Mode, bool* In_Volume, double* Occlusion);
+	void Test_Point_Occlusion(const struct FVector& Location, UDS_DLWE_Mode::EUDS_DLWE_Mode Mode, bool* In_Volume, double* Occlusion);
 	void ResetBox();
 	void Recycle_Render_Target();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);

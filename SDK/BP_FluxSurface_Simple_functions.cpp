@@ -332,9 +332,9 @@ void ABP_FluxSurface_Simple_C::Generate()
 // Function BP_FluxSurface_Simple.BP_FluxSurface_Simple_C.GenerateMesh
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FluxSurface_Simple_C::GenerateMesh(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State)
+void ABP_FluxSurface_Simple_C::GenerateMesh(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State)
 {
 	static class UFunction* Func = nullptr;
 
@@ -408,9 +408,9 @@ void ABP_FluxSurface_Simple_C::GetCoastlineState(class PDA_FluxCoastlineState_0:
 // Function BP_FluxSurface_Simple.BP_FluxSurface_Simple_C.GetSimulationState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FluxSurface_Simple_C::GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State)
+void ABP_FluxSurface_Simple_C::GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State)
 {
 	static class UFunction* Func = nullptr;
 
@@ -729,9 +729,9 @@ void ABP_FluxSurface_Simple_C::SetNiagaraData(class UNiagaraComponent* NiagaraSy
 // Function BP_FluxSurface_Simple.BP_FluxSurface_Simple_C.SetSimulationState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C*State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FluxSurface_Simple_C::SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State)
+void ABP_FluxSurface_Simple_C::SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State)
 {
 	static class UFunction* Func = nullptr;
 
@@ -769,9 +769,9 @@ void ABP_FluxSurface_Simple_C::SetStateHeightWetMap(class UTexture* Texture)
 // Function BP_FluxSurface_Simple.BP_FluxSurface_Simple_C.SetWaveProfile
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FluxSurface_Simple_C::SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile)
+void ABP_FluxSurface_Simple_C::SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile)
 {
 	static class UFunction* Func = nullptr;
 

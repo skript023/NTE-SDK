@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "VehicleAnimBP_Base_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "VehicleAnimBP_Base_structs.hpp"
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
 
@@ -98,19 +98,19 @@ public:
 	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x2E20(0x0080)()
 
 public:
-	void ExecuteUbergraph_VehicleAnimBP_Base(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_F8B7F9284F6F0DA3CD516A87FD05A240();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_DA33E1D64E802F9B53C8889DDAAFD6CD();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_D1B67E4044FC8453B95BCC8D09DCD480();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_A8D7BD9A4E68261F7B0080968ACAC599();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_644BD5D74BF215C7F919D4AB3C1D66FC();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_5BE2F4A44C136C84157922B111560381();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_577A822A478A6D3FAA8B129718CD99A9();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_25B9058E42713CB1153F78AF4E8A37DC();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void AnimNotify_OpenDoor();
-	void AnimNotify_CloseDoor();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimNotify_CloseDoor();
+	void AnimNotify_OpenDoor();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_25B9058E42713CB1153F78AF4E8A37DC();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_577A822A478A6D3FAA8B129718CD99A9();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_5BE2F4A44C136C84157922B111560381();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_644BD5D74BF215C7F919D4AB3C1D66FC();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_A8D7BD9A4E68261F7B0080968ACAC599();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_D1B67E4044FC8453B95BCC8D09DCD480();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_DA33E1D64E802F9B53C8889DDAAFD6CD();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VehicleAnimBP_Base_AnimGraphNode_TransitionResult_F8B7F9284F6F0DA3CD516A87FD05A240();
+	void ExecuteUbergraph_VehicleAnimBP_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

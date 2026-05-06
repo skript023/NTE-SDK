@@ -17,37 +17,57 @@
 namespace SDK
 {
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.UpdateLoop
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.PostLoad
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::UpdateLoop(double DeltaTime)
+void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::PostLoad(double Delay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "UpdateLoop");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "PostLoad");
 
-	Params::BPI_FluxTickableEditorEvents_C_UpdateLoop Parms{};
+	Params::BPI_FluxTickableEditorEvents_C_PostLoad Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.Delay = Delay;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.StopSimulation
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.RestartSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::StopSimulation()
+void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::RestartSimulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "StopSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "RestartSimulation");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.SelectionLoop
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::SelectionLoop(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "SelectionLoop");
+
+	Params::BPI_FluxTickableEditorEvents_C_SelectionLoop Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -73,55 +93,35 @@ void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::StartSimulat
 }
 
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.SelectionLoop
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.StopSimulation
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::SelectionLoop(double DeltaTime)
+void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::StopSimulation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "SelectionLoop");
-
-	Params::BPI_FluxTickableEditorEvents_C_SelectionLoop Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.RestartSimulation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::RestartSimulation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "RestartSimulation");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "StopSimulation");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
-// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.PostLoad
+// Function BPI_FluxTickableEditorEvents.BPI_FluxTickableEditorEvents_C.UpdateLoop
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::PostLoad(double Delay)
+void BPI_FluxTickableEditorEvents::IBPI_FluxTickableEditorEvents_C::UpdateLoop(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "PostLoad");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxTickableEditorEvents_C", "UpdateLoop");
 
-	Params::BPI_FluxTickableEditorEvents_C_PostLoad Parms{};
+	Params::BPI_FluxTickableEditorEvents_C_UpdateLoop Parms{};
 
-	Parms.Delay = Delay;
+	Parms.DeltaTime = DeltaTime;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }

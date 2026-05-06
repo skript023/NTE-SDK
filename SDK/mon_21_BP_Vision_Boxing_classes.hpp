@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_BoxingTimeKind_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "HTGame_structs.hpp"
+#include "E_BoxingTimeKind_structs.hpp"
 #include "mon_21_BP_classes.hpp"
 
 

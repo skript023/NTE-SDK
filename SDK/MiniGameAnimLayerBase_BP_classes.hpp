@@ -12,8 +12,8 @@
 
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "HTGame_classes.hpp"
 #include "MiniGameAnimLayerBase_BP_structs.hpp"
+#include "HTGame_classes.hpp"
 
 
 namespace SDK

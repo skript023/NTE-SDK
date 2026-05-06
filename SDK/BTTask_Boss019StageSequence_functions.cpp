@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BTTask_Boss019StageSequence.BTTask_Boss019StageSequence_C.ExecuteUbergraph_BTTask_Boss019StageSequence
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBTTask_Boss019StageSequence_C::ExecuteUbergraph_BTTask_Boss019StageSequence(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_Boss019StageSequence_C", "ExecuteUbergraph_BTTask_Boss019StageSequence");
-
-	Params::BTTask_Boss019StageSequence_C_ExecuteUbergraph_BTTask_Boss019StageSequence Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BTTask_Boss019StageSequence.BTTask_Boss019StageSequence_C.ReceiveExecuteAI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -54,6 +34,26 @@ void UBTTask_Boss019StageSequence_C::ReceiveExecuteAI(class AAIController* Owner
 
 	Parms.OwnerController = OwnerController;
 	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BTTask_Boss019StageSequence.BTTask_Boss019StageSequence_C.ExecuteUbergraph_BTTask_Boss019StageSequence
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBTTask_Boss019StageSequence_C::ExecuteUbergraph_BTTask_Boss019StageSequence(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_Boss019StageSequence_C", "ExecuteUbergraph_BTTask_Boss019StageSequence");
+
+	Params::BTTask_Boss019StageSequence_C_ExecuteUbergraph_BTTask_Boss019StageSequence Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

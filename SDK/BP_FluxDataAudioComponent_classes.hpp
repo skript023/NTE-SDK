@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "BP_FluxDataComponent_0_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_FluxDataComponent_classes.hpp"
 
 
 namespace SDK
@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_FluxDataAudioComponent.BP_FluxDataAudioComponent_C
 // 0x00B0 (0x0248 - 0x0198)
-class UBP_FluxDataAudioComponent_C final : public BP_FluxDataComponent_0::UBP_FluxDataComponent_C
+class UBP_FluxDataAudioComponent_C final : public BP_FluxDataComponent::UBP_FluxDataComponent_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_FluxDataAudioComponent_C;        // 0x0198(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

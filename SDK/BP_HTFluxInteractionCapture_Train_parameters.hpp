@@ -117,7 +117,7 @@ DUMPER7_ASSERTS_BP_HTFluxInteractionCapture_Train_C_InitializeArea;
 struct BP_HTFluxInteractionCapture_Train_C_GetSimulationState final
 {
 public:
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_HTFluxInteractionCapture_Train_C_GetSimulationState;
 

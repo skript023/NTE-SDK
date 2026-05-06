@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "HTGame_classes.hpp"
 #include "Struct_JumpSection_MonsterCheckHP_structs.hpp"
+#include "HTGame_classes.hpp"
 
 
 namespace SDK

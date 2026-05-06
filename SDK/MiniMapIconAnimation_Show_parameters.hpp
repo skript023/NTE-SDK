@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.BP_UpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct MiniMapIconAnimation_Show_C_BP_UpdateAnimation final
-{
-public:
-	float                                         Percentage;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_MiniMapIconAnimation_Show_C_BP_UpdateAnimation;
-
 // Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.ExecuteUbergraph_MiniMapIconAnimation_Show
 // 0x0030 (0x0030 - 0x0000)
 struct MiniMapIconAnimation_Show_C_ExecuteUbergraph_MiniMapIconAnimation_Show final
@@ -39,6 +30,15 @@ public:
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_MiniMapIconAnimation_Show_C_ExecuteUbergraph_MiniMapIconAnimation_Show;
+
+// Function MiniMapIconAnimation_Show.MiniMapIconAnimation_Show_C.BP_UpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct MiniMapIconAnimation_Show_C_BP_UpdateAnimation final
+{
+public:
+	float                                         Percentage;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_MiniMapIconAnimation_Show_C_BP_UpdateAnimation;
 
 }
 

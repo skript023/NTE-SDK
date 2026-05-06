@@ -17,6 +17,15 @@
 namespace SDK::Params
 {
 
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FenceToSpawn_Short_C_OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FenceToSpawn_Short_C_OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0;
+
 // Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.ExecuteUbergraph_BP_FenceToSpawn_Short
 // 0x0260 (0x0260 - 0x0000)
 struct BP_FenceToSpawn_Short_C_ExecuteUbergraph_BP_FenceToSpawn_Short final
@@ -66,15 +75,6 @@ public:
 	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FenceToSpawn_Short_C_ExecuteUbergraph_BP_FenceToSpawn_Short;
-
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FenceToSpawn_Short_C_OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FenceToSpawn_Short_C_OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0;
 
 }
 

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FootIK_AnimLayer_Base_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
+#include "FootIK_AnimLayer_Base_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK

@@ -44,7 +44,7 @@ public:
 	void CanRenderInteractions(bool* CanRender);
 	void ExecuteUbergraph_BP_FluxInteractionCapture_Vehicle(int32 EntryPoint);
 	void GetCoastlineState(class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C** State);
-	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
 	void InitializeArea();
 	void PreviewDebugArea();
 	void ReceiveBeginPlay();

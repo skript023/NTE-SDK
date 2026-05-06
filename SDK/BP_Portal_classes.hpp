@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Portal.BP_Portal_C
 // 0x0068 (0x04B0 - 0x0448)
-class ABP_Portal_C : public AHTPortaltActor
+class ABP_Portal_C final : public AHTPortaltActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -41,21 +41,21 @@ public:
 	bool                                          NeedExitGameplay;                                  // 0x04AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivePortal();
-	void BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void DeActivateEvent();
-	void DeactivePortal();
-	void ExecuteUbergraph_BP_Portal(int32 EntryPoint);
-	void OnTriggerTeleportStarted(const class AHTPlayerCharacter* InPlayerCharacter);
-	void SetNewPortalTarget(class AActor* NewPortalTarget);
-	void SetTargetActor(class AActor* NewTarget);
-	void SightFX__FinishedFunc();
 	void SightFX__UpdateFunc();
+	void SightFX__FinishedFunc();
+	void SetTargetActor(class AActor* NewTarget);
+	void SetNewPortalTarget(class AActor* NewPortalTarget);
+	void OnTriggerTeleportStarted(const class AHTPlayerCharacter* InPlayerCharacter);
+	void ExecuteUbergraph_BP_Portal(int32 EntryPoint);
+	void DeactivePortal();
+	void DeActivateEvent();
+	void BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void ActivePortal();
 
-	class UStaticMeshComponent* GetPlaneComponent() const;
-	class AActor* GetTargetActor() const;
 	class UBoxComponent* GetTriggerBoxComponent() const;
+	class AActor* GetTargetActor() const;
+	class UStaticMeshComponent* GetPlaneComponent() const;
 
 public:
 	static class UClass* StaticClass()

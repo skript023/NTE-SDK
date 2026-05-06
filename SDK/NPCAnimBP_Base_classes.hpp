@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "NPCAnimBP_Base_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "AnimationWarpingRuntime_structs.hpp"
-#include "NPCAnimBP_Base_structs.hpp"
 
 
 namespace SDK

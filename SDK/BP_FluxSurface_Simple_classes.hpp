@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FluidFlux_classes.hpp"
 #include "BE_SurfaceMesh_0_structs.hpp"
-#include "BS_FluxSplashData_0_structs.hpp"
 #include "Engine_structs.hpp"
+#include "BS_FluxSplashData_0_structs.hpp"
+#include "FluidFlux_classes.hpp"
 
 
 namespace SDK
@@ -31,13 +31,13 @@ public:
 	class UProceduralMeshComponent*               SurfaceProceduralMesh;                             // 0x02E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SurfaceSectionMesh;                                // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SurfaceOverMesh;                                   // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class BP_FluxDataComponent::UBP_FluxDataComponent_C* BP_FluxDataComponent;                       // 0x02F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class BP_FluxDataComponent_0::UBP_FluxDataComponent_C* BP_FluxDataComponent;                     // 0x02F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBP_FluxMeshGenerator_C*                BP_FluxMeshGenerator;                              // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DomainSize;                                        // 0x0310(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* SimulationState;                      // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* SimulationState;                    // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C* CoastlineState;                       // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C> CutMaskActor;            // 0x0338(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C> CutMaskActor;              // 0x0338(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class BP_FluxOceanWave_0::ABP_FluxOceanWave_C* OceanWaveActor;                                   // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class AActor>                  ScenePainterActor;                                 // 0x0368(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	BE_SurfaceMesh_0::EBE_SurfaceMesh             SurfaceMeshMode;                                   // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -121,11 +121,11 @@ public:
 	void DetectCurrentCamera();
 	void ExecuteUbergraph_BP_FluxSurface_Simple(int32 EntryPoint);
 	void Generate();
-	void GenerateMesh(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State);
+	void GenerateMesh(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State);
 	void GenerateProceduralMeshFromSimulationState();
 	void Get_Surface_Height(double* SurfaceHeight);
 	void GetCoastlineState(class PDA_FluxCoastlineState_0::UPDA_FluxCoastlineState_C** State);
-	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
 	void GetWaveTextureMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances_0);
 	void InitializeAllStates();
 	void InitializeOvelapingEvent();
@@ -143,9 +143,9 @@ public:
 	void SetInteractionsTexture(class UTextureRenderTarget2D* Texture);
 	void SetInteractionsTextureVehicle(class UTextureRenderTarget2D* Texture);
 	void SetNiagaraData(class UNiagaraComponent* NiagaraSystem, bool& RequiredGround, bool& RequiredWave);
-	void SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State);
+	void SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State);
 	void SetStateHeightWetMap(class UTexture* Texture);
-	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
 	void SetWaveTexture();
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 	void SpawnSplash(const struct FVector& Location, const struct BS_FluxSplashData_0::FBS_FluxSplashData& BS_FluxSplashData);

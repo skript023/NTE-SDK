@@ -25,8 +25,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_GA_mon_02_act02_Steal_C;            // 0x0BC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_GA_mon_02_act02_Steal(int32 EntryPoint);
 	void K2_ActivateAbility();
+	void ExecuteUbergraph_GA_mon_02_act02_Steal(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "BP_HTFishAnimLayer_structs.hpp"
-#include "Engine_structs.hpp"
 #include "HTGame_classes.hpp"
 
 

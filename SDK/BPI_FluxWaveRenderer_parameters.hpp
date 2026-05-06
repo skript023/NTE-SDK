@@ -31,7 +31,7 @@ DUMPER7_ASSERTS_BPI_FluxWaveRenderer_C_SetWaveTextureAndArea;
 struct BPI_FluxWaveRenderer_C_SetWaveProfile final
 {
 public:
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BPI_FluxWaveRenderer_C_SetWaveProfile;
 

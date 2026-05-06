@@ -17,17 +17,165 @@
 namespace SDK
 {
 
-// Function BP_Portal.BP_Portal_C.ActivePortal
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Portal.BP_Portal_C.SightFX__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_Portal_C::ActivePortal()
+void ABP_Portal_C::SightFX__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "ActivePortal");
+		Func = Class->GetFunction("BP_Portal_C", "SightFX__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Portal.BP_Portal_C.SightFX__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Portal_C::SightFX__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "SightFX__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Portal.BP_Portal_C.SetTargetActor
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           NewTarget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Portal_C::SetTargetActor(class AActor* NewTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "SetTargetActor");
+
+	Params::BP_Portal_C_SetTargetActor Parms{};
+
+	Parms.NewTarget = NewTarget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Portal.BP_Portal_C.SetNewPortalTarget
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           NewPortalTarget                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Portal_C::SetNewPortalTarget(class AActor* NewPortalTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "SetNewPortalTarget");
+
+	Params::BP_Portal_C_SetNewPortalTarget Parms{};
+
+	Parms.NewPortalTarget = NewPortalTarget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Portal.BP_Portal_C.OnTriggerTeleportStarted
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class AHTPlayerCharacter*         InPlayerCharacter                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Portal_C::OnTriggerTeleportStarted(const class AHTPlayerCharacter* InPlayerCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "OnTriggerTeleportStarted");
+
+	Params::BP_Portal_C_OnTriggerTeleportStarted Parms{};
+
+	Parms.InPlayerCharacter = InPlayerCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Portal.BP_Portal_C.ExecuteUbergraph_BP_Portal
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Portal_C::ExecuteUbergraph_BP_Portal(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "ExecuteUbergraph_BP_Portal");
+
+	Params::BP_Portal_C_ExecuteUbergraph_BP_Portal Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Portal.BP_Portal_C.DeactivePortal
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Portal_C::DeactivePortal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "DeactivePortal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Portal.BP_Portal_C.DeActivateEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Portal_C::DeActivateEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "DeActivateEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Portal_C::BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Portal_C", "BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+
+	Params::BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -61,181 +209,33 @@ void ABP_Portal_C::BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_0_Comp
 }
 
 
-// Function BP_Portal.BP_Portal_C.BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Portal_C::BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-
-	Params::BP_Portal_C_BndEvt__BP_Portal_ActiveBox_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Portal.BP_Portal_C.DeActivateEvent
+// Function BP_Portal.BP_Portal_C.ActivePortal
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Portal_C::DeActivateEvent()
+void ABP_Portal_C::ActivePortal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "DeActivateEvent");
+		Func = Class->GetFunction("BP_Portal_C", "ActivePortal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Portal.BP_Portal_C.DeactivePortal
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Portal_C::DeactivePortal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "DeactivePortal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Portal.BP_Portal_C.ExecuteUbergraph_BP_Portal
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Portal_C::ExecuteUbergraph_BP_Portal(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "ExecuteUbergraph_BP_Portal");
-
-	Params::BP_Portal_C_ExecuteUbergraph_BP_Portal Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Portal.BP_Portal_C.OnTriggerTeleportStarted
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class AHTPlayerCharacter*         InPlayerCharacter                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Portal_C::OnTriggerTeleportStarted(const class AHTPlayerCharacter* InPlayerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "OnTriggerTeleportStarted");
-
-	Params::BP_Portal_C_OnTriggerTeleportStarted Parms{};
-
-	Parms.InPlayerCharacter = InPlayerCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Portal.BP_Portal_C.SetNewPortalTarget
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           NewPortalTarget                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Portal_C::SetNewPortalTarget(class AActor* NewPortalTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "SetNewPortalTarget");
-
-	Params::BP_Portal_C_SetNewPortalTarget Parms{};
-
-	Parms.NewPortalTarget = NewPortalTarget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Portal.BP_Portal_C.SetTargetActor
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           NewTarget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Portal_C::SetTargetActor(class AActor* NewTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "SetTargetActor");
-
-	Params::BP_Portal_C_SetTargetActor Parms{};
-
-	Parms.NewTarget = NewTarget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Portal.BP_Portal_C.SightFX__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Portal_C::SightFX__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "SightFX__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Portal.BP_Portal_C.SightFX__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Portal_C::SightFX__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "SightFX__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Portal.BP_Portal_C.GetPlaneComponent
+// Function BP_Portal.BP_Portal_C.GetTriggerBoxComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UBoxComponent*                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UStaticMeshComponent* ABP_Portal_C::GetPlaneComponent() const
+class UBoxComponent* ABP_Portal_C::GetTriggerBoxComponent() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "GetPlaneComponent");
+		Func = Class->GetFunction("BP_Portal_C", "GetTriggerBoxComponent");
 
-	Params::BP_Portal_C_GetPlaneComponent Parms{};
+	Params::BP_Portal_C_GetTriggerBoxComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -263,19 +263,19 @@ class AActor* ABP_Portal_C::GetTargetActor() const
 }
 
 
-// Function BP_Portal.BP_Portal_C.GetTriggerBoxComponent
+// Function BP_Portal.BP_Portal_C.GetPlaneComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class UBoxComponent*                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UBoxComponent* ABP_Portal_C::GetTriggerBoxComponent() const
+class UStaticMeshComponent* ABP_Portal_C::GetPlaneComponent() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Portal_C", "GetTriggerBoxComponent");
+		Func = Class->GetFunction("BP_Portal_C", "GetPlaneComponent");
 
-	Params::BP_Portal_C_GetTriggerBoxComponent Parms{};
+	Params::BP_Portal_C_GetPlaneComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -140,9 +140,9 @@ void BP_FluxOceanWave::ABP_FluxOceanWave_C::SetWaveTexture()
 // Function BP_FluxOceanWave.BP_FluxOceanWave_C.SetWaveProfile
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C*Profile                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void BP_FluxOceanWave::ABP_FluxOceanWave_C::SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile)
+void BP_FluxOceanWave::ABP_FluxOceanWave_C::SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile)
 {
 	static class UFunction* Func = nullptr;
 

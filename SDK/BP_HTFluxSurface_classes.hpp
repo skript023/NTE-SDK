@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "BE_SurfaceMesh_structs.hpp"
-#include "Engine_structs.hpp"
-#include "BS_FluxSplashData_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "BE_SurfacePermutation_structs.hpp"
 #include "BE_SurfaceDensity_structs.hpp"
-#include "HTGame_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "BE_SurfaceMesh_structs.hpp"
+#include "BS_FluxSplashData_structs.hpp"
+#include "BE_SurfacePermutation_structs.hpp"
 #include "BE_UnderwaterVisibility_structs.hpp"
+#include "HTGame_classes.hpp"
 
 
 namespace SDK
@@ -33,16 +33,16 @@ public:
 	class UStaticMeshComponent*                   VolumeContainer;                                   // 0x02F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UDecalComponent*                        DecalCausticsWet;                                  // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   VolumeColor;                                       // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class BP_FluxDataComponent_0::UBP_FluxDataComponent_C* BP_FluxDataComponent;                     // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class BP_FluxDataComponent::UBP_FluxDataComponent_C* BP_FluxDataComponent;                       // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPostProcessComponent*                  VolumeScreen;                                      // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBoxComponent*                          VolumeCollision;                                   // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DomainSize;                                        // 0x0330(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* SimulationState;                    // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* SimulationState;                      // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C* CoastlineState;                         // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPDA_FluxSignedDistanceField_C*         SignedDistanceFieldMask;                           // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 OceanWaveActor;                                    // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C> CutMaskActor;              // 0x0368(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C> CutMaskActor;            // 0x0368(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class AActor>                  ScenePainterActor;                                 // 0x0390(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	uint8                                         Pad_3B8[0x8];                                      // 0x03B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             SurfaceMeshTransform;                              // 0x03C0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -130,12 +130,12 @@ public:
 	void SpawnSplash(const struct FVector& Location, const struct BS_FluxSplashData::FBS_FluxSplashData& BS_FluxSplashData);
 	void SetWaveTextureAndArea(class UTextureRenderTarget2D* Texture, const struct FLinearColor& Area);
 	void SetWaveTexture();
-	void SetWaveProfile(class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile);
+	void SetWaveProfile(class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile);
 	void SetUnderwaterVolumeVisibility(bool NewVisibility);
 	void SetUnderWaterRender(bool bRender);
 	void SetSurfaceHeight(double Height, const bool ApplyuToSurface);
 	void SetStateHeightWetMap(class UTexture* Texture);
-	void SetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State);
+	void SetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State);
 	void SetSignedDistanceFieldMask(class UPDA_FluxSignedDistanceField_C* SignedDistanceField);
 	void SetNiagaraParameters(class UNiagaraComponent* System, bool RequreWave);
 	void SetNiagaraData(class UNiagaraComponent* NiagaraSystem, bool& RequiredGround, bool& RequiredWave, bool RequreSDF);
@@ -166,7 +166,7 @@ public:
 	void InitializeOnMobile();
 	void InitializeCutMask();
 	void InitializeAllStates();
-	void GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State);
+	void GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State);
 	void GetColorPreset(int32 Index_0, class PDA_FluxSurfacePreset::UPDA_FluxSurfacePreset_C** Preset);
 	void GetCoastlineState(class PDA_FluxCoastlineState::UPDA_FluxCoastlineState_C** State);
 	void ExecuteUbergraph_BP_HTFluxSurface(int32 EntryPoint);

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "BE_SurfacePermutation_structs.hpp"
-#include "BS_FluxSplashData_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "BE_SurfaceDensity_structs.hpp"
+#include "Engine_structs.hpp"
+#include "BS_FluxSplashData_structs.hpp"
 #include "BE_UnderwaterVisibility_structs.hpp"
 
 
@@ -199,7 +199,7 @@ DUMPER7_ASSERTS_BP_FluxSurface_C_SetWaveTextureAndArea;
 struct BP_FluxSurface_C_SetWaveProfile final
 {
 public:
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FluxSurface_C_SetWaveProfile;
 
@@ -251,7 +251,7 @@ DUMPER7_ASSERTS_BP_FluxSurface_C_SetStateHeightWetMap;
 struct BP_FluxSurface_C_SetSimulationState final
 {
 public:
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FluxSurface_C_SetSimulationState;
 
@@ -715,7 +715,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class BPI_FluxSurface_0::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface; // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class BPI_FluxSurface::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface; // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_GetAllActorsWithInterface_OutActors;      // 0x00B8(0x0010)(ReferenceParm)
@@ -734,10 +734,10 @@ public:
 	TScriptInterface<class BPI_FluxWaveRenderer::IBPI_FluxWaveRenderer_C> K2Node_DynamicCast_AsBPI_Flux_Wave_Renderer; // 0x0108(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class BPI_FluxSurface_0::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface_1; // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class BPI_FluxSurface::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface_1; // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class BPI_FluxSurface_0::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface_2; // 0x0138(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class BPI_FluxSurface::IBPI_FluxSurface_C> K2Node_DynamicCast_AsBPI_Flux_Surface_2; // 0x0138(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item_1;                         // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -818,8 +818,8 @@ public:
 	class ABP_FluxNiagaraActor_C*                 K2Node_DynamicCast_AsBP_Flux_Niagara_Actor_1;      // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class BP_FluxDataComponent_0::UBP_FluxDataComponent_C*> CallFunc_K2_GetComponentsByClass_ReturnValue; // 0x0160(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class BP_FluxDataComponent_0::UBP_FluxDataComponent_C* CallFunc_Array_Get_Item_3;                // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class BP_FluxDataComponent::UBP_FluxDataComponent_C*> CallFunc_K2_GetComponentsByClass_ReturnValue; // 0x0160(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class BP_FluxDataComponent::UBP_FluxDataComponent_C* CallFunc_Array_Get_Item_3;                  // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -831,7 +831,7 @@ DUMPER7_ASSERTS_BP_FluxSurface_C_InitializeOverlaping;
 struct BP_FluxSurface_C_GetSimulationState final
 {
 public:
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* State;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* State;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FluxSurface_C_GetSimulationState;
 
@@ -891,7 +891,7 @@ public:
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 K2Node_Event_Texture_3;                            // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Event_Area_2;                               // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* K2Node_Event_Profile;                         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* K2Node_Event_Profile;                       // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_Event_Height;                               // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_ApplyuToSurface;                      // 0x0098(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -910,8 +910,8 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0110(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	TArray<class BP_FluxDataComponent_0::UBP_FluxDataComponent_C*> CallFunc_K2_GetComponentsByClass_ReturnValue; // 0x0218(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class BP_FluxDataComponent_0::UBP_FluxDataComponent_C* CallFunc_Array_Get_Item;                  // 0x0228(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class BP_FluxDataComponent::UBP_FluxDataComponent_C*> CallFunc_K2_GetComponentsByClass_ReturnValue; // 0x0218(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class BP_FluxDataComponent::UBP_FluxDataComponent_C* CallFunc_Array_Get_Item;                    // 0x0228(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_FluxNiagaraActor_C*                 K2Node_DynamicCast_AsBP_Flux_Niagara_Actor;        // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -934,7 +934,7 @@ public:
 	struct BS_FluxSplashData::FBS_FluxSplashData  CallFunc_Map_Find_Value;                           // 0x0290(0x0010)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C* K2Node_Event_State_1;               // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxSimulationState::UPDA_FluxSimulationState_C* K2Node_Event_State_1;                 // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item_2;                         // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1443,7 +1443,7 @@ public:
 	class AActor*                                 K2Node_DynamicCast_AsActor;                        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class BPI_FluxWorldPainter_0::IBPI_FluxWorldPainter_C> K2Node_DynamicCast_AsBPI_Flux_World_Painter; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C> K2Node_DynamicCast_AsBPI_Flux_World_Painter; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FluxSurface_C_ApplyMaterialPainter;
@@ -1563,10 +1563,10 @@ public:
 	struct FVector4                               Mask;                                              // 0x0000(0x0020)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C* K2Node_DynamicCast_AsBP_Flux_Surface_Cut_Mask; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C* K2Node_DynamicCast_AsBP_Flux_Surface_Cut_Mask; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class BP_FluxSurfaceCutMask::ABP_FluxSurfaceCutMask_C* K2Node_DynamicCast_AsBP_Flux_Surface_Cut_Mask_1; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class BP_FluxSurfaceCutMask_0::ABP_FluxSurfaceCutMask_C* K2Node_DynamicCast_AsBP_Flux_Surface_Cut_Mask_1; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])

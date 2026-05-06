@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.ApplyMaterialParameters
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class UMaterialInstanceDynamic*>&Materials                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.RenderScenePainter
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C::ApplyMaterialParameters(const TArray<class UMaterialInstanceDynamic*>& Materials)
+void BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C::RenderScenePainter()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "ApplyMaterialParameters");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "RenderScenePainter");
 
-	Params::BPI_FluxWorldPainter_C_ApplyMaterialParameters Parms{};
-
-	Parms.Materials = std::move(Materials);
-
-	AsUObject()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C::OnRepaintBrushes()
 }
 
 
-// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.RenderScenePainter
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BPI_FluxWorldPainter.BPI_FluxWorldPainter_C.ApplyMaterialParameters
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class UMaterialInstanceDynamic*>&Materials                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C::RenderScenePainter()
+void BPI_FluxWorldPainter::IBPI_FluxWorldPainter_C::ApplyMaterialParameters(const TArray<class UMaterialInstanceDynamic*>& Materials)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "RenderScenePainter");
+		Func = AsUObject()->Class->GetFunction("BPI_FluxWorldPainter_C", "ApplyMaterialParameters");
 
-	AsUObject()->ProcessEvent(Func, nullptr);
+	Params::BPI_FluxWorldPainter_C_ApplyMaterialParameters Parms{};
+
+	Parms.Materials = std::move(Materials);
+
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 }

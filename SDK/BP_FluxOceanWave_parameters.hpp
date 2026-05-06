@@ -98,7 +98,7 @@ DUMPER7_ASSERTS_BP_FluxOceanWave_C_SetWaveTextureAndArea;
 struct BP_FluxOceanWave_C_SetWaveProfile final
 {
 public:
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* Profile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* Profile;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_FluxOceanWave_C_SetWaveProfile;
 
@@ -265,7 +265,7 @@ struct BP_FluxOceanWave_C_ExecuteUbergraph_BP_FluxOceanWave final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class PDA_FluxWaveProfile::UPDA_FluxWaveProfile_C* K2Node_Event_Profile;                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class PDA_FluxWaveProfile_0::UPDA_FluxWaveProfile_C* K2Node_Event_Profile;                       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 K2Node_Event_Texture;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Event_Area;                                 // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -18,7 +18,8 @@ namespace SDK
 
 // BlueprintGeneratedClass NPC_Sub_fm_Simple.NPC_Sub_fm_Simple_C
 // 0x0000 (0x07A0 - 0x07A0)
-class ANPC_Sub_fm_Simple_C : public ABP_SimpleNPC_Base_C
+#pragma pack(push, 0x1)
+class alignas(0x10) ANPC_Sub_fm_Simple_C : public ABP_SimpleNPC_Base_C
 {
 public:
 	static class UClass* StaticClass()
@@ -34,6 +35,7 @@ public:
 		return GetDefaultObjImpl<ANPC_Sub_fm_Simple_C>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_ANPC_Sub_fm_Simple_C;
 
 }

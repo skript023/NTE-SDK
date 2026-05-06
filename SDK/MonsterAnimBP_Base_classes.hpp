@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MonsterAnimBP_Base_structs.hpp"
+#include "Engine_structs.hpp"
 #include "HTGame_structs.hpp"
 #include "HTGame_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"

@@ -17,51 +17,31 @@
 namespace SDK
 {
 
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.Cus_FenceDisappear
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.TrickRotate__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_FenceToSpawn_Short_C::Cus_FenceDisappear()
+void ABP_FenceToSpawn_Short_C::TrickRotate__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "Cus_FenceDisappear");
+		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "TrickRotate__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.Cus_FenceShake
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.TrickRotate__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_FenceToSpawn_Short_C::Cus_FenceShake()
+void ABP_FenceToSpawn_Short_C::TrickRotate__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "Cus_FenceShake");
+		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "TrickRotate__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.ExecuteUbergraph_BP_FenceToSpawn_Short
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FenceToSpawn_Short_C::ExecuteUbergraph_BP_FenceToSpawn_Short(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "ExecuteUbergraph_BP_FenceToSpawn_Short");
-
-	Params::BP_FenceToSpawn_Short_C_ExecuteUbergraph_BP_FenceToSpawn_Short Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -85,29 +65,49 @@ void ABP_FenceToSpawn_Short_C::OnLoaded_C17384D340B0C37E33FF5CACAFA89AF0(class U
 }
 
 
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.TrickRotate__FinishedFunc
-// (BlueprintEvent)
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.ExecuteUbergraph_BP_FenceToSpawn_Short
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FenceToSpawn_Short_C::TrickRotate__FinishedFunc()
+void ABP_FenceToSpawn_Short_C::ExecuteUbergraph_BP_FenceToSpawn_Short(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "TrickRotate__FinishedFunc");
+		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "ExecuteUbergraph_BP_FenceToSpawn_Short");
+
+	Params::BP_FenceToSpawn_Short_C_ExecuteUbergraph_BP_FenceToSpawn_Short Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.Cus_FenceShake
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_FenceToSpawn_Short_C::Cus_FenceShake()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "Cus_FenceShake");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.TrickRotate__UpdateFunc
-// (BlueprintEvent)
+// Function BP_FenceToSpawn_Short.BP_FenceToSpawn_Short_C.Cus_FenceDisappear
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_FenceToSpawn_Short_C::TrickRotate__UpdateFunc()
+void ABP_FenceToSpawn_Short_C::Cus_FenceDisappear()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "TrickRotate__UpdateFunc");
+		Func = Class->GetFunction("BP_FenceToSpawn_Short_C", "Cus_FenceDisappear");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

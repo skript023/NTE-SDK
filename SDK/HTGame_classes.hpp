@@ -2749,7 +2749,7 @@ DUMPER7_ASSERTS_AHTBreakableCollection;
 
 // Class HTGame.AdlerUltraSkillProjectile
 // 0x00E0 (0x0870 - 0x0790)
-class AAdlerUltraSkillProjectile final : public AProjectileBase
+class AAdlerUltraSkillProjectile : public AProjectileBase
 {
 public:
 	TMap<EAdlerProjectileStage, TSubclassOf<class UHTGATargetType>> StageTargetTypeMap;              // 0x0788(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
@@ -3245,7 +3245,7 @@ DUMPER7_ASSERTS_AAmbient_Light_fx;
 
 // Class HTGame.AnimNotifyCustomApplicationRequirement
 // 0x0000 (0x0028 - 0x0028)
-class UAnimNotifyCustomApplicationRequirement final : public UObject
+class UAnimNotifyCustomApplicationRequirement : public UObject
 {
 public:
 	bool CanApplyEffect(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation) const;
@@ -4377,7 +4377,7 @@ DUMPER7_ASSERTS_UHTBTTask_FishMoveAroundTarget;
 
 // Class HTGame.AnimNotifyState_DirDissolve
 // 0x0048 (0x0078 - 0x0030)
-class UAnimNotifyState_DirDissolve final : public UAnimNotifyState
+class UAnimNotifyState_DirDissolve : public UAnimNotifyState
 {
 public:
 	float                                         DissolveStartOffset;                               // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9303,7 +9303,7 @@ DUMPER7_ASSERTS_UCurrentHPDamageExecution;
 
 // Class HTGame.AnimNotify_TeachFinish
 // 0x0000 (0x0038 - 0x0038)
-class UAnimNotify_TeachFinish final : public UAnimNotify
+class UAnimNotify_TeachFinish : public UAnimNotify
 {
 public:
 	static class UClass* StaticClass()
@@ -11591,7 +11591,7 @@ DUMPER7_ASSERTS_UAutoCombatConditionObj_TargetDistanceMoreThan;
 
 // Class HTGame.HTGamePlayEntranceActor
 // 0x0068 (0x0BE8 - 0x0B80)
-class AHTGamePlayEntranceActor final : public AHTVisualActor
+class AHTGamePlayEntranceActor : public AHTVisualActor
 {
 public:
 	class USphereComponent*                       TriggerComponent;                                  // 0x0B80(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21287,7 +21287,7 @@ DUMPER7_ASSERTS_UHTDebugGEFlowComponent;
 
 // Class HTGame.FindSpawnConditionObj_CustomSpawnCondition
 // 0x0000 (0x0028 - 0x0028)
-class UFindSpawnConditionObj_CustomSpawnCondition final : public UFindSpawnConditionObj
+class UFindSpawnConditionObj_CustomSpawnCondition : public UFindSpawnConditionObj
 {
 public:
 	bool BPGetCanSpawnActor(class AActor* OwnerActor, class AActor* TargetActor, const struct FHitResult& InHitResult);
@@ -22384,7 +22384,7 @@ DUMPER7_ASSERTS_UFindSpawnRotationObj_UseWorldRotation;
 
 // Class HTGame.HTAIBubbleBox
 // 0x0038 (0x0308 - 0x02D0)
-class AHTAIBubbleBox final : public ATriggerBox
+class AHTAIBubbleBox : public ATriggerBox
 {
 public:
 	TArray<struct FNPCMsgID>                      BubbleMsgArr;                                      // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -24680,7 +24680,7 @@ DUMPER7_ASSERTS_UGamepadKeySettingListItem;
 
 // Class HTGame.HTAimAnimLayer
 // 0x0150 (0x0550 - 0x0400)
-class UHTAimAnimLayer final : public UHTAnimLayerBase
+class UHTAimAnimLayer : public UHTAnimLayerBase
 {
 public:
 	class AHTPlayerCharacter*                     HTPlayerCharacter;                                 // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -25883,7 +25883,7 @@ DUMPER7_ASSERTS_UGuideNPCDataAsset;
 
 // Class HTGame.HTElevator
 // 0x0070 (0x0C90 - 0x0C20)
-class AHTElevator : public AHTLinearMoveActor
+class AHTElevator final : public AHTLinearMoveActor
 {
 public:
 	TArray<int32>                                 CmdList;                                           // 0x0C20(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
@@ -29529,7 +29529,7 @@ DUMPER7_ASSERTS_UHTAIRefreshCondition_Yahaha;
 
 // Class HTGame.HTMonsterAreaActor
 // 0x0038 (0x0BB8 - 0x0B80)
-class AHTMonsterAreaActor final : public AHTVisualActor
+class AHTMonsterAreaActor : public AHTVisualActor
 {
 public:
 	class UBoxComponent*                          TriggerComponent;                                  // 0x0B80(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -33864,7 +33864,7 @@ DUMPER7_ASSERTS_UHTAnimNotifyState_MotionWarpEx;
 
 // Class HTGame.HTModsCharacter
 // 0x0010 (0x29F0 - 0x29E0)
-class AHTModsCharacter final : public AHTMonsterCharacter
+class AHTModsCharacter : public AHTMonsterCharacter
 {
 public:
 	uint8                                         Pad_29E0[0x4];                                     // 0x29E0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -34123,7 +34123,7 @@ DUMPER7_ASSERTS_UHTAnimNotifyState_VaultToRun;
 
 // Class HTGame.HTAnimNotifyState_VinesCheck
 // 0x0008 (0x0038 - 0x0030)
-class UHTAnimNotifyState_VinesCheck final : public UHTAnimNotifyState
+class UHTAnimNotifyState_VinesCheck : public UHTAnimNotifyState
 {
 public:
 	bool                                          bIgnorePlayingMontage;                             // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -37153,7 +37153,7 @@ DUMPER7_ASSERTS_UHTBirdAnimInstance;
 
 // Class HTGame.HTBirdSplineActor
 // 0x0070 (0x03D0 - 0x0360)
-class AHTBirdSplineActor final : public AHTActor
+class AHTBirdSplineActor : public AHTActor
 {
 public:
 	struct FTransform                             SpawnTransform;                                    // 0x0360(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -39075,7 +39075,7 @@ DUMPER7_ASSERTS_UHTMiniMapIcon_FishPoint;
 
 // Class HTGame.HTPlayerMappableKey
 // 0x04F8 (0x0660 - 0x0168)
-class UHTPlayerMappableKey final : public UWidget
+class UHTPlayerMappableKey : public UWidget
 {
 public:
 	uint8                                         Pad_168[0x8];                                      // 0x0168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -46133,7 +46133,7 @@ DUMPER7_ASSERTS_UHTUI_MonsterDropBoxAward;
 
 // Class HTGame.HTFairySittableActor
 // 0x01E0 (0x0F30 - 0x0D50)
-class AHTFairySittableActor final : public AHTOneInteractSittableActor
+class AHTFairySittableActor : public AHTOneInteractSittableActor
 {
 public:
 	bool                                          bStopRotate;                                       // 0x0D50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -52967,7 +52967,7 @@ DUMPER7_ASSERTS_UHTGAComponent_EndAbilityCoolDown;
 
 // Class HTGame.RainDripSplineBase
 // 0x0010 (0x02D8 - 0x02C8)
-class ARainDripSplineBase final : public AActor
+class ARainDripSplineBase : public AActor
 {
 public:
 	TArray<class UNiagaraComponent*>              RainDripEmitters;                                  // 0x02C8(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -64220,7 +64220,7 @@ DUMPER7_ASSERTS_UHTMassCrowdForceLODProcessor;
 
 // Class HTGame.HTMassCrowdHideAndAvoidVolume
 // 0x00F8 (0x03F8 - 0x0300)
-class AHTMassCrowdHideAndAvoidVolume final : public ATriggerVolume
+class AHTMassCrowdHideAndAvoidVolume : public ATriggerVolume
 {
 public:
 	bool                                          bActiveOnBeginplay;                                // 0x0300(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -68627,7 +68627,7 @@ DUMPER7_ASSERTS_AHTMassTrafficMonsterVehicleBase;
 
 // Class HTGame.HTOracleStoneActor
 // 0x0238 (0x0DB8 - 0x0B80)
-class AHTOracleStoneActor final : public AHTVisualActor
+class AHTOracleStoneActor : public AHTVisualActor
 {
 public:
 	uint8                                         Pad_B80[0x8];                                      // 0x0B80(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -72168,7 +72168,7 @@ DUMPER7_ASSERTS_UHTUI_CapitalList;
 
 // Class HTGame.HTModsController
 // 0x0030 (0x08D8 - 0x08A8)
-class AHTModsController final : public AHTMonsterController
+class AHTModsController : public AHTMonsterController
 {
 public:
 	float                                         FindVehicleDistance;                               // 0x08A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -73713,7 +73713,7 @@ DUMPER7_ASSERTS_UHTTeachStageContent_ChiiChan;
 
 // Class HTGame.HTMontageSelect_BlueprintCustom
 // 0x0000 (0x0030 - 0x0030)
-class UHTMontageSelect_BlueprintCustom final : public UHTMontageSelect
+class UHTMontageSelect_BlueprintCustom : public UHTMontageSelect
 {
 public:
 	bool K2_CustomCondition(class UHTGameplayAbility* Ability, class AHTAbilityCharacter* OwningCharacter);
@@ -73809,7 +73809,7 @@ DUMPER7_ASSERTS_UHTMontageSelect_PreSection;
 
 // Class HTGame.HTPianoActor
 // 0x0070 (0x0BF0 - 0x0B80)
-class AHTPianoActor final : public AHTVisualActor
+class AHTPianoActor : public AHTVisualActor
 {
 public:
 	class UAkRtpc*                                AkRtpc;                                            // 0x0B80(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -74155,7 +74155,7 @@ DUMPER7_ASSERTS_UHTPlatformPreloadAssets;
 
 // Class HTGame.HTMotorbikeAnimInstance
 // 0x01C0 (0x16F0 - 0x1530)
-class UHTMotorbikeAnimInstance final : public UHTVehicleAnimationInstance
+class UHTMotorbikeAnimInstance : public UHTVehicleAnimationInstance
 {
 public:
 	struct FHTMotorbikeAnim                       MotorbikeAnim;                                     // 0x1530(0x00C8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -74986,7 +74986,7 @@ DUMPER7_ASSERTS_AHTNPCCharacter_Police;
 
 // Class HTGame.HTUI_MessageItem
 // 0x0088 (0x0F58 - 0x0ED0)
-class UHTUI_MessageItem final : public UHTUIBase
+class UHTUI_MessageItem : public UHTUIBase
 {
 public:
 	TMulticastInlineDelegate<void(class UHTUI_MessageItem* ItemUI)> OnInterval;                      // 0x0ED0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -76550,7 +76550,7 @@ DUMPER7_ASSERTS_AHTPingPangActor;
 
 // Class HTGame.HTUI_PianoButton
 // 0x0090 (0x1BB0 - 0x1B20)
-class UHTUI_PianoButton final : public UHTUI_Button
+class UHTUI_PianoButton : public UHTUI_Button
 {
 public:
 	int32                                         ButtonLine;                                        // 0x1B18(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -80248,7 +80248,7 @@ DUMPER7_ASSERTS_UHTUI_MapExploreDetail;
 
 // Class HTGame.HTRandomItemActor
 // 0x0018 (0x0B98 - 0x0B80)
-class AHTRandomItemActor final : public AHTVisualActor
+class AHTRandomItemActor : public AHTVisualActor
 {
 public:
 	bool                                          IsNotPickUp;                                       // 0x0B80(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -85733,7 +85733,7 @@ DUMPER7_ASSERTS_AHTTreasureBoxActor;
 
 // Class HTGame.HTStaticTreasureBoxActor
 // 0x0000 (0x0E30 - 0x0E30)
-class AHTStaticTreasureBoxActor final : public AHTTreasureBoxActor
+class AHTStaticTreasureBoxActor : public AHTTreasureBoxActor
 {
 public:
 	static class UClass* StaticClass()
@@ -92691,7 +92691,7 @@ DUMPER7_ASSERTS_UHTUINavigationSubsystem;
 
 // Class HTGame.HTUI_AdvVision_UnlockPopUp
 // 0x0090 (0x0F60 - 0x0ED0)
-class alignas(0x10) UHTUI_AdvVision_UnlockPopUp final : public UHTUIBase
+class alignas(0x10) UHTUI_AdvVision_UnlockPopUp : public UHTUIBase
 {
 public:
 	uint8                                         Pad_ED0[0x60];                                     // 0x0ED0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
@@ -98311,7 +98311,7 @@ DUMPER7_ASSERTS_UHTUI_ChatFriendInviteWidget;
 
 // Class HTGame.NotifyState_RevertUpdateStreaming
 // 0x0000 (0x0030 - 0x0030)
-class UNotifyState_RevertUpdateStreaming final : public UHTAnimNotifyState
+class UNotifyState_RevertUpdateStreaming : public UHTAnimNotifyState
 {
 public:
 	static class UClass* StaticClass()
@@ -103345,7 +103345,7 @@ DUMPER7_ASSERTS_UHTUI_CUTreasureBoxSlot;
 
 // Class HTGame.HTUI_PianoPlayMain
 // 0x0020 (0x0EF0 - 0x0ED0)
-class UHTUI_PianoPlayMain final : public UHTUIBase
+class UHTUI_PianoPlayMain : public UHTUIBase
 {
 public:
 	float                                         MaxWaitTime;                                       // 0x0ED0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -106893,7 +106893,7 @@ DUMPER7_ASSERTS_UHTUI_FurnitureTips;
 
 // Class HTGame.HTUI_GainExp
 // 0x0100 (0x0FD0 - 0x0ED0)
-class UHTUI_GainExp final : public UHTUIBase
+class UHTUI_GainExp : public UHTUIBase
 {
 public:
 	class UTextBlock*                             TextBlock_Level;                                   // 0x0ED0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -108100,7 +108100,7 @@ DUMPER7_ASSERTS_UHTUI_LawSetting;
 
 // Class HTGame.HTUI_Letter
 // 0x0028 (0x0F20 - 0x0EF8)
-class UHTUI_Letter final : public UHTUI_Description_Base
+class UHTUI_Letter : public UHTUI_Description_Base
 {
 public:
 	class URichTextBlock*                         RichTextBlock_Content;                             // 0x0EF8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -108353,7 +108353,7 @@ DUMPER7_ASSERTS_UHTUI_LikeabilityChatItem;
 
 // Class HTGame.HTUI_LikeabilityChatTips
 // 0x0010 (0x0EE0 - 0x0ED0)
-class UHTUI_LikeabilityChatTips final : public UHTUIBase
+class UHTUI_LikeabilityChatTips : public UHTUIBase
 {
 public:
 	uint8                                         Pad_ED0[0x8];                                      // 0x0ED0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -110570,7 +110570,7 @@ DUMPER7_ASSERTS_UHTUI_MenuPage;
 
 // Class HTGame.HTUI_Message
 // 0x0110 (0x0FE0 - 0x0ED0)
-class alignas(0x10) UHTUI_Message final : public UHTUIBase
+class alignas(0x10) UHTUI_Message : public UHTUIBase
 {
 public:
 	class UCanvasPanel*                           CP_All;                                            // 0x0ED0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -118957,7 +118957,7 @@ DUMPER7_ASSERTS_UHTUI_SelectGiftGoodsDetail;
 
 // Class HTGame.RollerCoasterActor
 // 0x0120 (0x0480 - 0x0360)
-class ARollerCoasterActor final : public AHTActor
+class ARollerCoasterActor : public AHTActor
 {
 public:
 	TArray<struct FRollerCoasterSpeedPoint>       SpeedPointList;                                    // 0x0360(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -121212,7 +121212,7 @@ DUMPER7_ASSERTS_UHTUI_SingleVisionGaming;
 
 // Class HTGame.HTUI_SinPoint
 // 0x00F8 (0x0FC8 - 0x0ED0)
-class UHTUI_SinPoint final : public UHTUIBase
+class UHTUI_SinPoint : public UHTUIBase
 {
 public:
 	class UHTProgressImage*                       ImageProgress;                                     // 0x0ED0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -121493,7 +121493,7 @@ DUMPER7_ASSERTS_UHTUI_SkillController_Playstation;
 
 // Class HTGame.NotifyState_KeepDistanceRootMotionNS
 // 0x0078 (0x00A8 - 0x0030)
-class UNotifyState_KeepDistanceRootMotionNS final : public UAnimNotifyState
+class UNotifyState_KeepDistanceRootMotionNS : public UAnimNotifyState
 {
 public:
 	struct FSkillMoveToForceTaskParam             MoveToForceTask;                                   // 0x0030(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
@@ -127614,7 +127614,7 @@ DUMPER7_ASSERTS_UHTUI_VehiclePeerItem;
 
 // Class HTGame.PathAreaSplineComponent
 // 0x02C0 (0x08C0 - 0x0600)
-class UPathAreaSplineComponent final : public USplineComponent
+class UPathAreaSplineComponent : public USplineComponent
 {
 public:
 	uint8                                         Pad_5F8[0x8];                                      // 0x05F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -130329,7 +130329,7 @@ DUMPER7_ASSERTS_UHTVehicle010MovementComponent;
 
 // Class HTGame.HTYahahaActor
 // 0x0010 (0x0B90 - 0x0B80)
-class AHTYahahaActor : public AHTVisualActor
+class AHTYahahaActor final : public AHTVisualActor
 {
 public:
 	TArray<class FName>                           YaHaHaIDs;                                         // 0x0B80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -133390,7 +133390,7 @@ DUMPER7_ASSERTS_UNotifyState_SetCameraSwitchState;
 
 // Class HTGame.NotifyState_SetCanBlink
 // 0x0000 (0x0030 - 0x0030)
-class UNotifyState_SetCanBlink final : public UAnimNotifyState
+class UNotifyState_SetCanBlink : public UAnimNotifyState
 {
 public:
 	static class UClass* StaticClass()

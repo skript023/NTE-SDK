@@ -176,9 +176,9 @@ void ABP_HTFluxInteractionCapture_C::InitializeArea()
 // Function BP_HTFluxInteractionCapture.BP_HTFluxInteractionCapture_C.GetSimulationState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class PDA_FluxSimulationState::UPDA_FluxSimulationState_C**State                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HTFluxInteractionCapture_C::GetSimulationState(class PDA_FluxSimulationState_0::UPDA_FluxSimulationState_C** State)
+void ABP_HTFluxInteractionCapture_C::GetSimulationState(class PDA_FluxSimulationState::UPDA_FluxSimulationState_C** State)
 {
 	static class UFunction* Func = nullptr;
 

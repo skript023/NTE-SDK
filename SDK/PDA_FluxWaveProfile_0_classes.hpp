@@ -31,14 +31,14 @@ public:
 	int32                                         WaveHeight;                                        // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ClearExternalReferences();
-	void CopyPropertiesToObject(class UObject* Destination, bool* Done);
-	void ExecuteUbergraph_PDA_FluxWaveProfile(int32 EntryPoint);
-	void GetExternalReferences(TArray<class UTexture*>* Objects);
 	void SetWaveProfileData(class UTexture* WaveProfilesForward, class UTexture* WaveProfilesInverse, const struct FLinearColor& WaveProfileDecode_0, int32 Frames_0, int32 WaveWidth, int32 WaveHeight_0);
+	void GetExternalReferences(TArray<class UTexture*>* Objects);
+	void ExecuteUbergraph_PDA_FluxWaveProfile(int32 EntryPoint);
+	void CopyPropertiesToObject(class UObject* Destination, bool* Done);
+	void ClearExternalReferences();
 
-	void ApplyWaveProfileMaterialData(TArray<class UMaterialInstanceDynamic*>& Materials) const;
 	void ApplyWaveProfileNiagaraData(class UNiagaraComponent* NiagaraSystem) const;
+	void ApplyWaveProfileMaterialData(TArray<class UMaterialInstanceDynamic*>& Materials) const;
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function ABP_Vehicle_002_Spoiler_03.ABP_Vehicle_002_Spoiler_03_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_Vehicle_002_Spoiler_03_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Vehicle_002_Spoiler_03_C_AnimGraph;
+
 // Function ABP_Vehicle_002_Spoiler_03.ABP_Vehicle_002_Spoiler_03_C.ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03
 // 0x0020 (0x0020 - 0x0000)
 struct ABP_Vehicle_002_Spoiler_03_C_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03 final
@@ -31,15 +40,6 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1;  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ABP_Vehicle_002_Spoiler_03_C_ExecuteUbergraph_ABP_Vehicle_002_Spoiler_03;
-
-// Function ABP_Vehicle_002_Spoiler_03.ABP_Vehicle_002_Spoiler_03_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_Vehicle_002_Spoiler_03_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_Vehicle_002_Spoiler_03_C_AnimGraph;
 
 }
 
